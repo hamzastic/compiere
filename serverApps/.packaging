@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurations>
+<archive name="compiereApps.jar" destination="build/jar" used="true" exploded="false">
+<folder prefix="" includes="" excludes="**/CVS/**" project="" projectLocation="lib" name="lib" location="lib" used="true"/>
+</archive>
+<archive name="compiereApps.war" destination="build/deploy" used="true" exploded="false">
+<folder prefix="" includes="" excludes="**/web.xml,**/lib/**,**/classes/**" project="" projectLocation="src/web" name="web" location="src/web" used="true"/>
+<file prefix="WEB-INF/lib" project="" projectLocation="build/jar/compiereApps.jar" name="compiereApps.jar" location="build/jar/compiereApps.jar" used="true"/>
+<file prefix="WEB-INF" project="" projectLocation="src/web/WEB-INF/web.xml" name="web.xml" location="src/web/WEB-INF/web.xml" used="true"/>
+</archive>
+<archive name="compiereApps.ear" destination="build/deploy" used="true" exploded="false">
+<file prefix="" project="" projectLocation="build/deploy/compiereApps.war" name="compiereApps.war" location="build/deploy/compiereApps.war" used="true"/>
+<file prefix="" location="/opt/compiere/compieredev/compiere/Compiere2/lib/Compiere.jar" name="Compiere.jar" used="true"/>
+<file prefix="" location="/opt/compiere/compieredev/compiere/Compiere2/lib/CompiereSLib.jar" name="CompiereSLib.jar" used="true"/>
+<file prefix="META-INF" project="" projectLocation="src/ear/application.xml" name="application.xml" location="src/ear/application.xml" used="true"/>
+</archive>
+</configurations>

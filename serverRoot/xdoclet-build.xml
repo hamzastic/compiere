@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="_xdoclet_generation_" name="XDoclet Generator">
+<property file="xdoclet-build.properties"/>
+<property name="eclipse.home" value="/usr/local/eclipse-3.0RC3/eclipse"/>
+<property name="xdoclet.basedir" value="${eclipse.home}/plugins/org.jboss.ide.eclipse.xdoclet.core_1.4.1.e31-jre14"/>
+<property name="jboss.net.version" value="3.2"/>
+<path id="project.classpath"><pathelement location="lib"/>
+<pathelement location="../tools/lib/local"/>
+<pathelement location="../tools/lib/jstl.jar"/>
+<pathelement location="../tools/lib/Verisign.jar"/>
+<pathelement location="../tools/lib/saxpath.jar"/>
+<pathelement location="../tools/lib/xdoclet.jar"/>
+<pathelement location="../tools/lib/standard.jar"/>
+<pathelement location="../tools/lib/bsh-core-2.0b1.jar"/>
+<pathelement location="../tools/lib/log4j.jar"/>
+<pathelement location="../tools/lib/activation.jar"/>
+<pathelement location="../tools/lib/mail.jar"/>
+<pathelement location="../tools/lib/bsh-2.0b1.jar"/>
+<pathelement location="../tools/lib/j2ee.jar"/>
+<pathelement location="../dbPort/lib"/>
+<pathelement location="/usr/local/Projects/Mayking/Compiere/compiere/compiere-all/interfaces/Interfaces.jar"/>
+<pathelement location="/usr/local/Projects/Mayking/Compiere/compiere/compiere-all/lib/postgresql.jar"/>
+<pathelement location="${eclipse.home}/plugins/org.junit_3.8.1/junit.jar"/>
+<pathelement location="../looks/lib"/>
+<pathelement location="/usr/local/Projects/Mayking/Compiere/compiere/compiere-all/lib/jPDF.jar"/>
+<pathelement location="../jboss/client/jboss-client.jar"/>
+<pathelement location="../jboss/client/jboss-common-client.jar"/>
+<pathelement location="../jboss/client/jboss-j2ee.jar"/>
+<pathelement location="../jboss/client/jbosssx-client.jar"/>
+<pathelement location="../jboss/client/jboss-transaction-client.jar"/>
+<pathelement location="../jboss/client/jmx-rmi-connector-client.jar"/>
+<pathelement location="../jboss/client/jnp-client.jar"/>
+<pathelement location="/usr/local/Projects/Mayking/Compiere/compiere/compiere-all/lib/oracle.jar"/>
+<pathelement location="/usr/local/Projects/Mayking/Compiere/compiere/compiere-all/lib/sybase.jar"/>
+<pathelement location="/usr/local/Projects/Mayking/Compiere/compiere/compiere-all/tools/lib/rowset.jar"/>
+<pathelement location="/usr/local/Projects/Mayking/Compiere/compiere/compiere-all/tools/lib/jtds-1.0.jar"/>
+<pathelement location="../tools/lib/jconn3.jar"/>
+<pathelement location="../tools/lib/ocrs12.jar"/>
+<pathelement location="../base/lib"/>
+<pathelement location="../print/lib"/>
+<pathelement location="../tools/lib/rowset.jar"/>
+</path>
+<path id="xdoclet.classpath">
+<path refid="project.classpath"/>
+<fileset dir="${xdoclet.basedir}">
+<include name="*.jar"/>
+<exclude name="xdoclet-module-jboss-net-*.jar"/>
+</fileset>
+<fileset dir="${xdoclet.basedir}">
+<include name="xdoclet-module-jboss-net-${jboss.net.version}*.jar"/>
+</fileset>
+</path>
+<target name="_xdoclet_generation_" depends="N10004"/>
+<target name="N10004" description="StandardEJB">
+<taskdef classpathref="xdoclet.classpath" classname="xdoclet.modules.ejb.EjbDocletTask" name="ejbdoclet"/><ejbdoclet ejbSpec="2.0"  excludedTags="@version,@author,@todo"  destDir="src"  addedTags="@xdoclet-generated at ${TODAY},@copyright The XDoclet Team,@author XDoclet,@version ${version}" >
+
+
+
+
+
+
+
+
+
+
+<fileset dir="src"  includes="**/*.java" >
+
+
+
+</fileset>
+<packageSubstitution packages="session,entity"  substituteWith="interfaces" >
+
+
+</packageSubstitution>
+
+
+
+
+
+
+
+
+
+
+
+
+<deploymentdescriptor validateXML="true"  destDir="src/META-INF" >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</deploymentdescriptor>
+<jboss Version="3.0"  destDir="src/META-INF" >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</jboss>
+</ejbdoclet></target>
+</project>

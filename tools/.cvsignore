@@ -1,0 +1,5 @@
+build
+buildServer
+*.jpx
+*.jpx.local
+.externalToolBuilders

@@ -1,0 +1,411 @@
+<!-- ====================================================== -->
+<!-- Compiere Environment Setup                             -->
+<!-- ====================================================== -->
+<!-- $Header: /opt/mercurial/repository/CVSRepo/compiere/compiere-all/install/Compiere2/build.xml,v 1.5.2.1 2009/04/15 14:37:01 marco Exp $-->
+
+<!--
+* Modifications and additions made by Mayking to this file are subject
+* to the Mayking Public License Version 1.0 ("Mayking License"); You may not
+* use this modification and additions except in compliance with the Mayking
+* License. You may obtain a copy of the Mayking License at
+* http://www.mayking.com/opensuite/license.html
+* 
+* Software distributed under the License is distributed on an "AS IS" basis,
+* WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+* the specific language governing rights and limitations under the License.
+*
+* The Original Code is OPENSUITE 
+* The Initial Developer of the Original Code is Mayking
+* Portions created by Mayking are Copyright © Mayking. All Rights 
+* Reserved. 
+*
+* Contributor: ML, Mayking .
+-->
+<project name="setup" default="setup" basedir=".">
+
+  <description>
+	This buildfile is used to setup the Compiere Environment.
+  </description>
+
+  <property environment="env"/>
+  <property name="envFile" value="CompiereEnv.properties"/>
+<!-- ML, Mayking: compatibility with Java 5.   -->
+    <condition property="jboss4" >
+      <equals arg1="${ant.java.version}" arg2="1.5" />
+    </condition>
+<!-- End ML, Mayking.   -->
+
+  <!-- ==================================================== -->
+  <!-- Init                                                 -->
+  <!-- ==================================================== -->
+  <target name="setupInit"
+	  description="initialization target">
+
+	<echo message="Compiere Server Setup ==================="/>
+	<echo message="COMPIERE_HOME = ${env.COMPIERE_HOME}"/>
+  	
+	<!-- create the time stamp and environment -->
+	<tstamp/>
+	<available file="${envFile}" property="envFileExists" />
+	<fail message="**** RUN_setup was not successful - please re-run ****" 
+		unless="envFileExists" />
+	<property file="${envFile}"/>
+	<filter filtersfile="${envFile}"/>
+  	
+	<echo message="Environment   = ${envFile}"/>
+	<echo message="Java VM       = ${COMPIERE_JAVA_TYPE}"/>
+	<echo message="Database      = ${COMPIERE_DB_TYPE}"/>
+	<echo message="Apps Server   = ${COMPIERE_APPS_TYPE}"/>
+	<echo message="AppsDeployment= ${COMPIERE_APPS_DEPLOY}"/>
+
+
+	<!-- Environment variables -->
+	<condition property="isWindows">
+	  <os family="windows"/>
+	</condition>
+	<condition property="isAppsJBoss">
+	  <equals arg1="jboss" arg2="${COMPIERE_APPS_TYPE}"/>
+	</condition>
+
+	<echo message="Windows=${isWindows} JBoss=${isAppsJBoss}"/>
+
+  </target>
+
+
+  <!-- ==================================================== -->
+  <!-- Windows Setup                                        -->
+  <!-- ==================================================== -->
+  <target name="setupWin" depends="setupInit" if="isWindows"
+	  description="Windows Setup">
+
+	<!--	Filter files No Overwrite	-->
+	<copy file="utils/myDBcopyTemplate.bat"
+	  tofile="utils/myDBcopy.bat" filtering="yes" overwrite="no"/>
+
+	<!--	Filter files Overwrite		--> 
+	<copy file="utils/myEnvironmentTemplate.bat"
+	  tofile="utils/myEnvironment.bat" filtering="yes" overwrite="yes"/>
+
+	<copy file="utils/RUN_GetCompiereTemplate.bat"
+	  tofile="utils/RUN_GetCompiere.bat" filtering="yes" overwrite="yes"/>
+	<copy file="utils/RUN_PutExportTemplate.bat"
+	  tofile="utils/RUN_PutExport.bat" filtering="yes" overwrite="yes"/>
+	<copy file="utils/RUN_WinEnvTemplate.bat"
+	  tofile="utils/RUN_WinEnv.bat" filtering="yes" overwrite="yes"/>
+
+	<delete>
+	  <fileset dir="." includes="**/*.sh" excludes="RUN_Compiere2.sh"/>
+	</delete>
+
+  </target>
+
+
+  <!-- ==================================================== -->
+  <!-- Non Windows Setup                                    -->
+  <!-- ==================================================== -->
+  <target name="setupNonWin" depends="setupInit" unless="isWindows"
+	  description="Non Windows Setup">
+
+	<!--	Filter files No Overwrite	-->
+	<copy file="utils/myDBcopyTemplate.sh"
+	  tofile="utils/myDBcopy.sh" filtering="yes" overwrite="no"/>
+
+	<!--	Filter files Overwrite		-->
+	<copy file="utils/myEnvironmentTemplate.sh"
+	  tofile="utils/myEnvironment.sh" filtering="yes" overwrite="yes"/>
+
+	<copy file="utils/RUN_GetCompiereTemplate.sh"
+	  tofile="utils/RUN_GetCompiere.sh" filtering="yes" overwrite="yes"/>
+	<copy file="utils/RUN_PutExportTemplate.sh"
+	  tofile="utils/RUN_PutExport.sh" filtering="yes" overwrite="yes"/>
+	<copy file="utils/RUN_UnixEnvTemplate.sh"
+	  tofile="utils/RUN_UnixEnv.sh" filtering="yes" overwrite="yes"/>
+
+	<!--	Fix OS stuff	-->
+	<fixcrlf srcdir="."
+		eol="lf" eof="remove"
+		includes="**/*.sh"/>
+	<chmod dir="."
+	  perm="ugo+x"
+	  includes="**/*.sh"/>
+
+	<delete>
+	  <fileset dir="." includes="*.bat" excludes="RUN_Compiere2.bat"/>
+	  <fileset dir="utils" includes="**/*.bat"/>
+	</delete>
+
+  </target>
+
+  <!-- ==================================================== -->
+  <!-- Compiere Client Lib                                  -->
+  <!-- ==================================================== -->
+  <target name="setupCLib" depends="setupInit"
+	  description="Setup Compiere Client Lib">
+
+    <!-- Delete Old		-->
+    <delete file="lib/CompiereCLib.jar" failonerror="no"/>
+    <delete file="lib/CClient.jar" failonerror="no"/>
+    <delete file="lib/CTools.jar" failonerror="no"/>
+    <delete file="lib/jPDFPrinter.jar" failonerror="no"/>
+	
+    <mkdir dir="buildCLib"/>
+    <unjar src="lib/CCTools.jar" dest="buildCLib" />
+    <unjar src="lib/jPDF.jar" dest="buildCLib" />
+  	<!-- ML, Mayking: we need the driver for every supported db, otherwise Compiere fails to start                   -->
+    <!-- unjar src="lib/${COMPIERE_DB_TYPE}.jar" dest="buildCLib" / -->
+    <unjar src="lib/oracle.jar" dest="buildCLib" />  	
+    <unjar src="lib/postgresql.jar" dest="buildCLib" />  	
+    <unjar src="lib/sybase.jar" dest="buildCLib" />  	
+  	<!-- ML, Mayking.   -->
+    <unjar src="lib/${COMPIERE_APPS_TYPE}.jar" dest="buildCLib" />
+
+    <!-- Create CompiereCLib.jar file 	-->
+    <jar jarfile="lib/CompiereCLib.jar" index="yes">
+      <fileset dir="buildCLib"/>
+      <manifest>
+		<attribute name="Specification-Title" value="Compiere Client Library"/>
+		<attribute name="Specification-Version" value="${COMPIERE_MAIN_VERSION}"/>
+		<attribute name="Specification-Vendor" value="(C) 2005 ComPiere, Inc."/>
+		<attribute name="Implementation-Title" value="CompiereCLib ${COMPIERE_MAIN_VERSION}"/>
+		<attribute name="Implementation-Version" value="${COMPIERE_MAIN_VERSION} ${DSTAMP}-${TSTAMP}"/>
+		<attribute name="Implementation-Vendor" value="ComPiere, Inc."/>
+		<attribute name="Implementation-URL" value="http://www.compiere.com"/>
+      </manifest>
+    </jar>
+  	
+    <echo message="KeyStore=${COMPIERE_KEYSTORE} - Alias=${COMPIERE_KEYSTORECODEALIAS}"/>
+    <!-- Sign CompiereCLib Jar 		-->
+    <signjar jar="lib/CompiereCLib.jar"
+      alias="${COMPIERE_KEYSTORECODEALIAS}"
+      storepass="${COMPIERE_KEYSTOREPASS}" keystore="${COMPIERE_KEYSTORE}" />
+
+    <!-- Sign Compiere Jar 		-->
+    <copy file="lib/Compiere.jar" tofile="buildCLib/Compiere1.jar" overwrite="yes"/>
+    <signjar jar="buildCLib/Compiere1.jar"
+      alias="${COMPIERE_KEYSTORECODEALIAS}"
+      storepass="${COMPIERE_KEYSTOREPASS}" keystore="${COMPIERE_KEYSTORE}" />
+    <copy file="buildCLib/Compiere1.jar" tofile="lib/Compiere.jar" overwrite="yes"/>
+
+    <delete dir="buildCLib" />
+  </target>
+	
+  <!-- ==================================================== -->
+  <!-- Compiere Server Lib                                  -->
+  <!-- ==================================================== -->
+  <target name="setupSLib" depends="setupInit"
+	  description="Setup Compiere Server Lib">
+
+    <!-- Delete Old		-->
+    <delete file="lib/CompiereSLib.jar" failonerror="no"/>
+    <delete file="lib/CServer.jar" failonerror="no"/>
+		
+    <mkdir dir="buildSLib"/>
+    <unjar src="lib/CSTools.jar" dest="buildSLib" />
+    <unjar src="lib/jPDF.jar" dest="buildSLib" />
+  	<!-- ML, Mayking: we need the driver for every supported db, otherwise Compiere fails to start                   -->
+    <!-- unjar src="lib/${COMPIERE_DB_TYPE}.jar" dest="buildSLib" / -->
+    <unjar src="lib/oracle.jar" dest="buildSLib" />  	
+    <unjar src="lib/postgresql.jar" dest="buildSLib" />  	
+    <unjar src="lib/sybase.jar" dest="buildSLib" />  	
+  	<!-- End, ML, Mayking.   -->
+
+    <!-- Create CompiereSLib.jar file 	-->
+    <jar jarfile="lib/CompiereSLib.jar" index="yes" >
+      <fileset dir="buildSLib"/>
+      <manifest>
+		<attribute name="Specification-Title" value="Compiere Server Library"/>
+		<attribute name="Specification-Version" value="${COMPIERE_MAIN_VERSION}"/>
+		<attribute name="Specification-Vendor" value="(C) 2005 ComPiere, Inc."/>
+		<attribute name="Implementation-Title" value="CompiereSLib ${COMPIERE_MAIN_VERSION}"/>
+		<attribute name="Implementation-Version" value="${COMPIERE_MAIN_VERSION} ${DSTAMP}-${TSTAMP}"/>
+		<attribute name="Implementation-Vendor" value="ComPiere, Inc."/>
+		<attribute name="Implementation-URL" value="http://www.compiere.com"/>
+      </manifest>
+    </jar>
+
+    <!-- Sign CompiereSLib Jar 		-->
+    <signjar jar="lib/CompiereSLib.jar"
+      alias="${COMPIERE_KEYSTORECODEALIAS}"
+      storepass="${COMPIERE_KEYSTOREPASS}" keystore="${COMPIERE_KEYSTORE}" />
+      	
+    <delete dir="buildSLib" />
+  </target>
+	
+	
+  <!-- ==================================================== -->
+  <!-- Setup Lib                                            -->
+  <!-- ==================================================== -->
+  <target name="setupLib" 
+	depends="setupInit, setupWin, setupNonWin, setupCLib, setupSLib"
+	description="Setup Compiere Lib directory">
+
+	<!--	Filter files Overwrite			-->
+	<copy file="${basedir}/utils/ftpPutExportTemplate.txt"
+	  	tofile="${basedir}/utils/ftpPutExport.txt" filtering="yes" overwrite="yes"/>
+	<copy file="${basedir}/utils/ftpGetCompiereTemplate.txt"
+	  	tofile="${basedir}/utils/ftpGetCompiere.txt" filtering="yes" overwrite="yes"/>
+	<copy file="${basedir}/utils/compiereDirectTemplate.jnlp"
+	  	tofile="${basedir}/lib/compiereDirect.jnlp" filtering="yes" overwrite="yes"/>
+
+	<!--	Create Client Zip		-->
+	<zip zipfile="${basedir}/lib/Compiere2Client.zip">
+	  <zipfileset dir="." prefix="Compiere2"
+		includes="*.html"/>
+	  <zipfileset dir="." prefix="Compiere2"
+	  	includes="RUN_Compiere2.*"/>
+	  <zipfileset dir="utils" prefix="Compiere2"
+	  	includes="WinEnv.js"/>
+	  <zipfileset dir="lib" prefix="Compiere2/lib"
+		includes="Compiere2.exe,*.ico,Compiere.jar,CompiereCLib.jar,compiereDirect.jnlp,index.html,*.0"/>
+	</zip>
+
+	<!--	Save properties		-->
+	<copy file="CompiereEnv.properties"
+	  	tofile="CompiereEnv.properties.save"/>
+	<copy file="Compiere.properties"
+	  	tofile="Compiere.properties.save"/>
+  </target>
+
+	
+  <!-- ==================================================== -->
+  <!-- Setup EAR Libraries                                  -->
+  <!-- ==================================================== -->
+  <target name="setupEAR" depends="setupLib"
+	  description="Setup Compiere EAR Libraries">
+
+	<!-- Create compiereRoot war		-->
+	<zip destfile="${basedir}/lib/compiereRoot.war">
+		<!-- copy Base	-->
+		<zipfileset src="${basedir}/lib/compiereRootBase.war" />
+		<!-- copy to compiereHome	-->
+		<zipfileset dir="${basedir}/lib" 
+			includes="Compiere2Client.zip,Compiere.jar,CompiereCLib.jar,*.jnlp,*.0,*.html"
+			prefix="compiereHome"/>
+	</zip>
+
+	<!-- Build compiereRoot ear		-->
+	<ear 
+	    	destfile="${basedir}/lib/compiereRoot.ear" 
+	    	appxml="${basedir}/lib/compiereRoot.xml">
+	  <fileset dir="${basedir}/lib" 
+		includes="compiereRoot.jar,compiereRoot.war,Compiere.jar,CompiereSLib.jar"/>
+	  <manifest>
+		<attribute name="Specification-Title" value="CompiereRoot"/>
+		<attribute name="Specification-Version" value="R251x"/>
+		<attribute name="Specification-Vendor" value="Compiere.org"/>
+		<attribute name="Implementation-Title" value="CompiereRoot"/>
+		<attribute name="Implementation-Version" value="R251x ${DSTAMP}-${TSTAMP}"/>
+		<attribute name="Implementation-URL" value="http://www.compiere.org"/>
+		<attribute name="Class-Path" value="compiereRoot.jar Compiere.jar CompiereSLib.jar"/>
+	  </manifest>
+	</ear>
+
+	<!-- Build compiereApps ear		-->
+	<ear 
+	    	destfile="${basedir}/lib/compiereApps.ear" 
+    		appxml="${basedir}/lib/compiereApps.xml">
+	  <fileset dir="${basedir}/lib" 
+		includes="compiereApps.war,Compiere.jar,CompiereSLib.jar"/>
+	  <manifest>
+		<attribute name="Specification-Title" value="CompiereApps"/>
+		<attribute name="Specification-Version" value="R251x"/>
+		<attribute name="Specification-Vendor" value="Compiere.org"/>
+		<attribute name="Implementation-Title" value="CompiereApps"/>
+		<attribute name="Implementation-Version" value="R251x ${DSTAMP}-${TSTAMP}"/>
+		<attribute name="Implementation-URL" value="http://www.compiere.org"/>
+		<attribute name="Class-Path" value="Compiere.jar CompiereSLib.jar"/>
+	  </manifest>
+	</ear>
+    
+	<!-- Build compiereWebStore ear		-->
+	<ear 
+    		destfile="${basedir}/lib/compiereWebStore.ear" 
+    		appxml="${basedir}/lib/compiereWebStore.xml">
+	  <fileset dir="${basedir}/lib" 
+		includes="compiereWebStore.war,Compiere.jar,CompiereSLib.jar,compiereApps.jar"/>
+	  <manifest>
+		<attribute name="Specification-Title" value="CompiereWebStore"/>
+		<attribute name="Specification-Version" value="R251x"/>
+		<attribute name="Specification-Vendor" value="Compiere.org"/>
+		<attribute name="Implementation-Title" value="CompiereWebStore"/>
+		<attribute name="Implementation-Version" value="R251x ${DSTAMP}-${TSTAMP}"/>
+		<attribute name="Implementation-URL" value="http://www.compiere.org"/>
+		<attribute name="Class-Path" value="Compiere.jar CompiereSLib.jar compiereApps.jar"/>
+	  </manifest>
+	</ear>
+	
+  </target>
+	
+		
+  <!-- ==================================================== -->
+  <!-- Setup JBoss Server                                   -->
+  <!-- ==================================================== -->
+  <target name="setupJBoss" depends="setupLib" if="isAppsJBoss"
+	  description="Setup JBoss Application Server">
+
+	<!-- Filter JBoss Templates Conf	-->
+	<copy file="${basedir}/jboss/server/compiere/conf/jboss-serviceTemplate.xml"
+	    tofile="${basedir}/jboss/server/compiere/conf/jboss-service.xml" filtering="yes" overwrite="yes"/>
+	<copy file="${basedir}/jboss/server/compiere/conf/login-configTemplate.xml"
+	    tofile="${basedir}/jboss/server/compiere/conf/login-config.xml" filtering="yes" overwrite="yes"/>
+	
+	<!-- Filter JBoss Templates HTTP Invoker	-->
+	<copy file="${basedir}/jboss/server/compiere/deploy/http-invoker.sar/META-INF/jboss-serviceTemplate.xml"
+	    tofile="${basedir}/jboss/server/compiere/deploy/http-invoker.sar/META-INF/jboss-service.xml" filtering="yes" overwrite="yes"/>
+
+<!-- ML, Mayking: compatibility with Java 5.   -->
+    <antcall target="tomcat41" />
+    <antcall target="tomcat55" />
+<!-- End ML, Mayking.   -->
+
+    <!-- Delete Old		-->
+    <delete file="${basedir}/jboss/server/compiere/lib/CClient.jar" failonerror="no"/>
+    <delete file="${basedir}/jboss/server/compiere/lib/CSTools.jar" failonerror="no"/>
+    <delete file="${basedir}/jboss/server/compiere/lib/jPDFPrinter.jar" failonerror="no"/>
+    <delete file="${basedir}/jboss/server/compiere/lib/oracle.jar" failonerror="no"/>
+
+  </target>
+
+	
+<!-- ML, Mayking: compatibility with Java 5.   -->
+  <target name="tomcat41" unless="jboss4">
+    <echo message="Setup Tomcat 4.1" />
+    <!-- Filter Tomcat 4.1                          -->
+    <filter filtersfile="${envFile}" />
+    <copy file="${basedir}/jboss/server/compiere/deploy/jbossweb-tomcat41.sar/META-INF/jboss-serviceTemplate.xml"
+          tofile="${basedir}/jboss/server/compiere/deploy/jbossweb-tomcat41.sar/META-INF/jboss-service.xml" filtering="true" overwrite="true"/>
+  </target>
+  <target name="tomcat55" if="jboss4">
+    <echo message="Setup Tomcat 5.5" />
+    <!-- Filter Tomcat 5.5                          -->
+    <filter filtersfile="${envFile}" />
+    <copy file="${basedir}/jboss/server/compiere/deploy/jbossweb-tomcat55.sar/serverTemplate.xml"
+          tofile="${basedir}/jboss/server/compiere/deploy/jbossweb-tomcat55.sar/server.xml" filtering="true" overwrite="true" />
+  </target>
+<!-- End ML, Mayking.   -->
+
+  <!-- ==================================================== -->
+  <!-- Deploy J2EE Server                                   -->
+  <!-- ==================================================== -->
+  <target name="setupDeploy" depends="setupEAR, setupJBoss"
+	  description="Deploy Compiere Application Server">
+  	
+	<echo message="AppsDeployment= ${COMPIERE_APPS_DEPLOY}"/>
+  	
+	<copy file="${basedir}/lib/soap.jar" todir="${COMPIERE_APPS_DEPLOY}/../lib"/>
+	<copy file="${basedir}/lib/compiereRoot.ear" todir="${COMPIERE_APPS_DEPLOY}"/>
+	<copy file="${basedir}/lib/compiereApps.ear" todir="${COMPIERE_APPS_DEPLOY}"/>
+	<copy file="${basedir}/lib/compiereWebStore.ear" todir="${COMPIERE_APPS_DEPLOY}"/>
+	  	
+  </target>
+		
+	
+  <!-- ==================================================== -->
+  <!-- Setup                                                -->
+  <!-- ==================================================== -->
+  <target name="setup" depends="setupDeploy"
+	  	description="Setup Compiere">
+  </target>
+
+
+</project>

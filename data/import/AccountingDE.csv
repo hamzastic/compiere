@@ -1,0 +1,1118 @@
+Konto Nr,Bezeichnung
+1,Aufwendungen für die Ingangsetzung und Erweiterung des Geschäftsbetriebs
+2,Aufwendungen für die Währungsumstellung auf den Euro
+10,"Konzessionen, gewerbliche Schutzrechte und ähnliche Rechte und Werte sowie Lizenzen an solchen Rechten und Werten"
+15,Konzessionen 
+20,Gewerbliche Schutzrechte 
+25,Ähnliche Rechte und Werte 
+27,EDV Software 
+30,Lizenzen an gewerblichen Schutzrechten und ähnlichen Rechten und Werten
+35,Geschäfts oder Firmenwert 
+38,Anzahlungen auf Geschäfts oder Firmenwert
+39,Anzahlungen auf immaterielle Vermögensgegenstände 
+40,Verschmelzungsmehrwert 
+50,"Grundstücke, grundstücksgleiche Rechte und Bauten einschließlich der Bauten auf fremden Grundstücken"
+60,Grundstücke und grundstücksgleiche Rechte ohne Bauten 
+65,Unbebaute Grundstücke 
+70,"Grundstücksgleiche Rechte (Erbbaurecht, Dauerwohnrecht) "
+75,Grundstücke mit Substanzverzehr 
+79,Anzahlungen auf Grundstücke und grundstücksgleiche Rechte ohne Bauten 
+80,Bauten auf eigenen Grundstücken und grundstücksgleichen Rechten 
+85,Grundstückswerte eigener bebauter Grundstücke 
+90,Geschäftsbauten 
+100,Fabrikbauten 
+110,Garagen
+111,Außenanlagen 
+112,Hof und Wegebefestigungen 
+113,Einrichtungen für Geschäfts und Fabrikbauten 
+115,Andere Bauten 
+120,"Geschäfts, Fabrik und andere Bauten im Bau "
+129,"Anzahlungen auf Geschäfts, Fabrik und andere Bauten auf eigenen Grundstücken und grundstücksgleichen Rechten "
+140,Wohnbauten 
+145,Garagen
+146,Außenanlagen 
+147,Hof und Wegebefestigungen 
+148,Einrichtungen für Wohnbauten 
+150,Wohnbauten im Bau 
+159,Anzahlungen auf Wohnbauten auf eigenen Grundstücken und grundstücksgleichen Rechten+B97
+160,Bauten auf fremden Grundstücken 
+165,Geschäftsbauten 
+170,Fabrikbauten 
+175,Garagen 
+176,Außenanlagen 
+177,Hof und Wegebefestigungen 
+178,Einrichtungen für Geschäfts und Fabrikbauten 
+179,Andere Bauten 
+180,"Geschäfts, Fabrik und andere Bauten im Bau "
+189,"Anzahlungen auf Geschäfts, Fabrik und andere Bauten auf fremden Grundstücken "
+190,Wohnbauten 
+191,Garagen 
+192,Außenanlagen 
+193,Hof und Wegebefestigungen 
+194,Einrichtungen für Wohnbauten 
+195,Wohnbauten im Bau 
+199,Anzahlungen auf Wohnbauten auf fremden Grundstücken 
+200,Technische Anlagen und Maschinen 
+210,Maschinen 
+220,Maschinengebundene Werkzeuge 
+240,Maschinelle Anlagen 
+260,Transportanlagen u.ä. 
+280,Betriebsvorrichtungen 
+290,Technische Anlagen und Maschinen im Bau 
+299,Anzahlungen auf technische Anlagen und Maschinen 
+300,"Andere Anlagen, Betriebs und Geschäftsausstattung "
+310,Andere Anlagen 
+320,Pkw 
+350,Lkw
+380,Sonstige Transportmittel 
+400,Betriebsausstattung 
+410,Geschäftsausstattung 
+420,Büroeinrichtung 
+430,Ladeneinrichtung 
+440,Werkzeuge 
+450,Einbauten 
+460,Gerüst und Schalungsmaterial 
+480,Geringwertige Wirtschaftsgüter bis DM 800
+490,Sonstige Betriebs und Geschäftsausstattung 
+498,"Andere Anlagen, Betriebs und Geschäftsausstattung im Bau "
+499,"Anzahlungen auf andere Anlagen, Betriebs und Geschäftsausstattung "
+500,Anteile an verbundenen Unternehmen (Anlagevermögen)
+504,Anteile an herrschender oder mit Mehrheit beteiligter Gesellschaft
+505,Ausleihungen an verbundene Unternehmen 
+510,Beteiligungen
+513,Typisch stille Beteiligungen
+516,Atypisch stille Beteiligungen
+517,Andere Beteiligungen an Kapitalgesellschaften 
+518,Andere Beteiligungen an Personengesellschaften 
+519,Beteiligung einer GmbH & Co.KG an einer Komplementär GmbH
+520,"Ausleihungen an Unternehmen, mit denen ein Beteiligungsverhältnis besteht "
+525,Wertpapiere des Anlagevermögens 
+530,Wertpapiere mit Gewinnbeteiligungsansprüchen 
+535,Festverzinsliche Wertpapiere 
+540,Sonstige Ausleihungen 
+550,Darlehen 
+570,Genossenschaftsanteile zum langfristigen Verbleib 
+580,Ausleihungen an Gesellschafter 
+590,Ausleihungen an nahestehende Personen 
+595,Rückdeckungsansprüche aus Lebensversicherungen zum langfristigen Verbleib 
+600,Anleihen nicht konvertibel 
+601,Anleihen nicht konvertibel mit einer Restlaufzeit bis zu 1 Jahr 
+605,Anleihen nicht konvertibel mit einer Restlaufzeit von 1 bis 5 Jahren 
+610,Anleihen nicht konvertibel mit einer Restlaufzeit von mehr als 5 Jahren 
+615,Anleihen konvertibel 
+616,Anleihen konvertibel mit einer Restlaufzeit bis zu 1 Jahr 
+620,Anleihen konvertibel mit einer Restlaufzeit von 1 bis 5 Jahren
+625,Anleihen konvertibel mit einer Restlaufzeit von mehr als 5 Jahren 
+630,Verbindlichkeiten gegenüber Kreditinstituten 
+631,Verbindlichkeiten gegenüber Kreditinstituten mit einer Restlaufzeit bis zu 1 Jahr 
+640,Verbindlichkeiten gegenüber Kreditinstituten mit einer Restlaufzeit von 1 bis 5 Jahren
+650,Verbindlichkeiten gegenüber Kreditinstituten mit einer Restlaufzeit von mehr als 5 Jahren 
+660,Verbindlichkeiten gegenüber Kreditinstituten aus TZ Verträgen 
+661,Verbindlichkeiten gegenüber Kreditinstituten aus TZ Verträgen mit einer Restlaufzeit bis zu 1 Jahr 
+670,Verbindlichkeiten gegenüber Kreditinstituten aus TZ Verträgen mit einer Restlaufzeit von 1 bis 5 Jahren 
+680,Verbindlichkeiten gegenüber Kreditinstituten aus TZ Verträgen mit einer Restlaufzeit von mehr als 5 Jahren 
+699,Gegenkonto 0630 0689 bei Aufteilung der Konten 0690 0698 
+700,Verbindlichkeiten gegenüber verbundenen Unternehmen 
+701,Verbindlichkeiten gegenüber verbundenen Unternehmen mit einer Restlaufzeit bis zu 1 Jahr 
+705,Verbindlichkeiten gegenüber verbundenen Unternehmen mit einer Restlaufzeit von 1 bis 5 Jahren 
+710,Verbindlichkeiten gegenüber verbundenen Unternehmen mit einer Restlaufzeit von mehr als 5 Jahren 
+715,"Verbindlichkeiten gegenüber Unternehmen, mit denen ein Beteiligungsverhältnis besteht "
+716,"Verbindlichkeiten gegenüber Unternehmen, mit denen ein Beteiligungsverhältnis besteht mit einer Restlaufzeit bis zu 1 Jahr"
+720,"Verbindlichkeiten gegenüber Unternehmen, mit denen ein Beteiligungsverhältnis besteht mit einer Restlaufzeit von 1 bis 5 Jahren"
+725,"Verbindlichkeiten gegenüber Unternehmen, mit denen ein Beteiligungsverhältis besteht mit einer Restlaufzeit von mehr als 5 Jahren"
+730,Verbindlichkeiten gegenüber Gesellschaftern 
+731,Verbindlichkeiten gegenüber Gesellschaftern mit einer Restlaufzeit bis zu 1 Jahr 
+740,Verbindlichkeiten gegenüber Gesellschaftern mit einer Restlaufzeit von 1 bis 5 Jahren 
+750,Verbindlichkeiten gegenüber Gesellschaftern mit einer Restlaufzeit von mehr als 5 Jahren 
+755,Verbindlichkeiten gegenüber Gesellschaftern für offene Ausschüttungen
+760,Darlehen typisch stiller Gesellschafter 
+761,Darlehen typisch stiller Gesellschafter mit einer Restlaufzeit bis zu 1 Jahr 
+764,Darlehen typisch stiller Gesellschafter mit einer Restlaufzeit von 1 bis 5 Jahren 
+767,Darlehen typisch stiller Gesellschafter mit einer Restlaufzeit von mehr als 5 Jahren 
+770,Darlehen atypisch stiller Gesellschafter 
+771,Darlehen atypisch stiller Gesellschafter mit einer Restlaufzeit bis zu 1 Jahr 
+774,Darlehen atypisch stiller Gesellschafter mit einer Restlaufzeit von 1 bis 5 Jahren 
+777,Darlehen atypisch stiller Gesellschafter mit einer Restlaufzeit von mehr als 5 Jahren 
+780,Partiarische Darlehen 
+781,Partiarische Darlehen mit einer Restlaufzeit bis zu 1 Jahr 
+784,Partiarische Darlehen mit einer Restlaufzeit von 1 bis 5 Jahren 
+787,Partiarische Darlehen mit einer Restlaufzeit von mehr als 5 Jahren 
+799,Gegenkonto 0730 0789 bei Aufteilung der Konten 0790 0798 
+800,Gezeichnetes Kapital 
+801,"Ausstehende Einlagen auf das gezeichnete Kapital, nicht eingefordert (Aktivausweis)"
+810,"Ausstehende Einlagen auf das gezeichnete Kapital, eingefordert (Aktivausweis)"
+820,"Ausstehende Einlagen auf das gezeichnete Kapital, nicht eingefordert (Passivausweis, von gezeichnetem Kapital offen abgesetzt; eingeforderte Einlagen s. Konten 0830 0838), Ausstehende Einlagen auf das Kommandit Kapital"
+830,"Ausstehende Einlagen auf das gezeichnete Kapital, eingefordert, (Forderungen, nicht eingeforderte ausstehende Einlagen s. Konten 0820 0829)"
+839,"Eingeforderte Nachschüsse (Forderungen, Gegenkonto 0845) "
+840,Kapitalrücklage 
+841,Kapitalrücklage durch Ausgabe von Anteilen über Nennbetrag 
+842,Kapitalrücklage durch Ausgabe von Schuldverschreibungen für Wandlungsrechte und Optionsrechte zum Erwerb von Anteilen 
+843,Kapitalrücklage durch Zuzahlung gegen Gewährung eines Vorzugs für Anteile 
+844,Kapitalrücklage durch andere Zuzahlungen in das Eigenkapital 
+845,Eingefordertes Nachschußkapital (Gegenkonto 0839) 
+846,Gesetzliche Rücklage 
+847,Gesetzliche Rücklage 40% Vorbelastung
+848,Gesetzliche Rücklage 0% Vorbelastung (EK04)
+849,Gesetzliche Rücklage 0% Vorbelastung (EK02)
+850,Rücklage für eigene Anteile 
+851,Satzungsmäßige Rücklagen 
+852,Satzungsmäßige Rücklagen 40% Vorbelastung
+853,Satzungsmäßige Rücklagen 0% Vorbelastung (EK04)
+854,Satzungsmäßige Rücklagen 0% Vorbelastung (EK02)
+855,Andere Gewinnrücklagen 45% /40% Vorbelastung
+856,Eigenkapitalanteil von Wertaufholungen
+857,Andere Gewinnrücklagen
+858,Andere Gewinnrücklagen 0% Vorbelastung (EK04)
+859,Andere Gewinnrücklagen 0% Vorbelastung (EK02)
+860,Gewinnvortrag vor Verwendung 
+862,Gewinnvortrag 40% Vorbelastung
+864,Gewinnvortrag 0% Vorbelastung (EK04)
+866,Gewinnvortrag 0% Vorbelastung (EK02)
+868,Verlustvortrag vor Verwendung 
+869,Vortrag auf neue Rechnung (Bilanz) 
+870,Festkapital 
+880,Variables Kapital 
+890,Gesellschafter Darlehen
+900,Kommandit Kapital 
+910,Verlustausgleichskonto 
+920,Gesellschafter Darlehen 
+930,Sonderposten mit Rücklageanteil 
+931,Sonderposten mit Rücklageanteil nach § 6b EStG
+932,Sonderposten mit Rücklageanteil nach Abschnitt 35 EStR
+933,Sonderposten mit Rücklageanteil nach § 6d EStG
+934,Sonderposten mit Rücklageanteil nach § 1 EntwLStG 
+935,Sonderposten aus der Währungsumstellung auf den Euro
+936,Sonderposten mit Rücklageanteil nach § 7d EStG
+937,Sonderposten mit Rücklageanteil nach § 79 EStDV
+938,Sonderposten mit Rücklageanteil nach § 80 EStDV
+939,Sonderposten mit Rücklageanteil nach § 52 Abs.16 EStG
+940,Sonderposten mit Rücklageanteil nach § 82 EStDV
+941,Sonderposten mit Rücklageanteil nach § 82a EStDV
+942,Sonderposten mit Rücklageanteil nach § 82d EStDV
+943,Sonderposten mit Rücklageanteil nach § 82e EStDV
+944,Sonderposten mit Rücklageanteil nach § 14 BerlinFG
+945,Sonderposten mit Rücklageanteil nach § 3 ZonenRFG/§ 4 6 FördergebietsG
+946,Sonderposten mit Rücklageanteil nach § 4d EStG
+947,Sonderposten mit Rücklageanteil nach § 7g Abs. 1 EStG
+948,"Sonderposten mit Rücklageanteil nach § 7g Abs. 3, 7 EStG"
+949,Sonderposten mit Rücklagenach nach § 74 EStDV (nur für Einzelunternehmen und Personengesellschaften)
+950,Rückstellungen für Pensionen und ähnliche Verpflichtungen 
+955,Steuerrückstellungen 
+957,Gewerbesteuerrückstellung 
+963,Körperschaftsteuerrückstellung 
+969,Rückstellung für latente Steuern 
+970,Sonstige Rückstellungen 
+971,"Rückstellungen für unterlassene Aufwendungen für Instandhaltung, Nachholung in den ersten drei Monaten "
+972,"Rückstellungen für unterlassene Aufwendungen für Instandhaltung, Nachholung innerhalb des 4. bis 12. Monats "
+973,Rückstellungen für Abraum und Abfallbeseitigung 
+974,Rückstellungen für Gewährleistungen (Gegenkonto 4790) 
+976,Rückstellungen für drohende Verluste aus schwebenden Geschäften 
+977,Rückstellungen für Abschluß und Prüfungskosten 
+978,Aufwandsrückstellungen gemäß § 249 Abs. 2 HGB 
+979,Rückstellungen für Umweltschutz 
+980,Aktive Rechnungsabgrenzung 
+983,Abgrenzung aktive latente Steuern 
+984,Als Aufwand berücksichtigte Zölle und Verbrauchsteuern auf Vorräte 
+985,Als Aufwand berücksichtigte Umsatzsteuer auf Anzahlungen 
+986,Damnum/Disagio
+990,Passive Rechnungsabgrenzung 
+992,Wertberichtigungen (zur unterjährigen Kostenverrechnung für BWA) 
+996,Pauschalwertberichtigung auf Forderungen mit einer Restlaufzeit bis zu 1 Jahr 
+997,Pauschalwertberichtigung auf Forderungen mit einer Restlaufzeit von mehr als 1 Jahr
+998,Einzelwertberichtigungen auf Forderungen mit einer Restlaufzeit bis zu 1 Jahr 
+999,Einzelwertberichtigungen auf Forderungen mit einer Restlaufzeit von mehr als 1 Jahr
+1000,Kasse 
+1010,Nebenkasse 1
+1100,Postbank
+1190,LZB Guthaben
+1195,Bundesbankguthaben 
+1198,Übernahmekonto Bankeinzug Debitoren
+1199,Übernahmekonto Rechnungsausgang Debitoren
+1200,Bank 
+1290,Finanzmittelanlagen im Rahmen der kurzfristigen Finanzdisposition
+1300,Wechsel aus Lieferungen und Leistungen 
+1301,Wechsel aus Lieferungen und Leistungen mit einer Restlaufzeit bis zu 1 Jahr 
+1302,Wechsel aus Lieferungen und Leistungen mit einer Restlaufzeit von mehr als 1 Jahr
+1305,"Wechsel aus Lieferungen und Leistungen, bundesbankfähig"
+1310,Besitzwechsel gegen verbundene Unternehmen 
+1311,Besitzwechsel gegen verbundene Unternehmen mit einer Restlaufzeit bis zu 1 Jahr 
+1312,Besitzwechsel gegen verbundene Unternehmen mit einer Restlaufzeit von mehr als 1 Jahr
+1315,"Besitzwechsel gegen verbundene Unternehmen, bundesbankfähig"
+1320,"Besitzwechsel gegen Unternehmen, mit denen ein Beteiligungsverhältnis besteht"
+1321,"Besitzwechsel gegen Unternehmen, mit denen ein Beteiligungsverhältnis besteht, mit einer Restlaufzeit bis zu 1 Jahr"
+1322,"Besitzwechsel gegen Unternehmen, mit denen ein Beteiligungsverhältnis besteht, mit einer Restlaufzeit von mehr als 1 Jahr"
+1325,"Besitzwechsel gegen Unternehmen, mit denen ein Beteiligungsverhältnis besteht, bundesbankfähig"
+1327,Finanzwechsel 
+1330,Schecks 
+1332,Übernahmekonto Bezahlung Kreditoren
+1340,Anteile an verbundenen Unternehmen (Umlaufvermögen) 
+1344,Anteile an herrschender oder mit Mehrheit beteiligter Gesellschaft
+1345,Eigene Anteile 
+1348,Sonstige Wertpapiere 
+1349,Werpapieranlagen im Rahmen der kurzfristigen Finanzdisposition
+1350,GmbH Anteile zum kurzfristigen Verbleib 
+1352,Genossenschafts Anteile zum kurzfristigen Verbleib 
+1355,Ansprüche aus Rückdeckungsversicherungen 
+1360,Geldtransit 
+1370,"Verrechnungskonto für Gewinnermittlung § 4/3 EStG, ergebniswirksam"
+1371,"Verrechnungskonto für Gewinnermittlung § 4/3 EStG, nicht ergebniswirksam"
+1380,Überleitungskonto Kostenstelle 
+1390,Verrechnungskonto Ist Versteuerung 
+1400,Forderungen aus Lieferungen und Leistungen 
+1410,Forderungen aus Lieferungen und Leistungen ohne Kontokorrent 
+1450,Forderungen nach § 11 Abs.1 Satz 2 EStG für § 4/3 EStG
+1451,Forderungen aus Lieferungen und Leistungen ohne Kontokorrent mit einer Restlaufzeit bis zu 1 Jahr 
+1455,Forderungen aus Lieferungen und Leistungen ohne Kontokorrent mit einer Restlaufzeit von mehr als 1 Jahr
+1460,Zweifelhafte Forderungen 
+1461,Zweifelhafte Forderungen mit einer Restlaufzeit bis zu 1 Jahr 
+1465,Zweifelhafte Forderungen mit einer Restlaufzeit von mehr als 1 Jahr
+1470,Forderungen aus Lieferungen und Leistungen gegen verbundene Unternehmen 
+1471,Forderungen aus Lieferungen und Leistungen gegen verbundene Unternehmen mit einer Restlaufzeit bis zu 1 Jahr 
+1475,Forderungen aus Lieferungen und Leistungen gegen verbundene Unternehmen mit einer Restlaufzeit von mehr als 1 Jahr
+1478,Wertberichtigungen auf Forderungen mit einer Restlaufzeit bis zu 1 Jahr gegen verbundene Unternehmen 
+1479,Wertberichtigungen auf Forderungen mit einer Restlaufzeit von mehr als 1 Jahr gegen verbundene Unternehmen
+1480,"Forderungen aus Lieferungen und Leistungen gegen Unternehmen, mit denen ein Beteiligungsverhältnis besteht"
+1481,"Forderungen aus Lieferungen und Leistungen gegen Unternehmen, mit denen ein Beteiligungsverhältnis besteht, mit Restlaufzeit bis zu 1 Jahr"
+1485,"Forderungen aus Lieferungen und Leistungen gegen Unternehmen, mit denen ein Beteiligungsverhältnis besteht, mit Restlaufzeit mehr als 1 Jahr"
+1488,"Wertberichtigungen auf Forderungen mit einer Restlaufzeit bis zu 1 Jahr gegen Unternehmen, mit denen ein Beteiligungsverhältnis besteht"
+1489,"Wertberichtigungen auf Forderungen mit einer Restlaufzeit von mehr als 1 Jahr gegen Unternehmen, mit denen ein Beteiligungsverhältnis besteht"
+1490,Forderungen aus Lieferungen und Leistungen gegen Gesellschafter 
+1491,Forderungen aus Lieferungen und Leistungen gegen Gesellschafter mit einer Restlaufzeit bis zu 1 Jahr
+1495,Forderungen aus Lieferungen und Leistungen gegen Gesellschafter mit einer Restlaufzeit von mehr als 1 Jahr
+1499,Gegenkonto 1451 1498 bei Aufteilung Debitorenkonto 
+1500,Sonstige Vermögensgegenstände 
+1501,Sonstige Vermögensgegenstände mit einer Restlaufzeit bis zu 1 Jahr
+1502,Sonstige Vermögensgegenstände mit einer Restlaufzeit von mehr als 1 Jahr
+1503,Forderungen gegen Vorstandsmitglieder und Geschäftsführer mit einer Restlaufzeit bis zu 1 Jahr 
+1504,Forderungen gegen Vorstandsmitglieder und Geschäftsführer mit einer Restlaufzeit von mehr als 1 Jahr
+1505,Forderungen gegen Aufsichtsrats und Beiratsmitglieder mit einer Restlaufzeit bis zu 1 Jahr
+1506,Forderungen gegen Aufsichtsrats und Beiratsmitglieder mit einer Restlaufzeit von mehr als 1 Jahr
+1507,Forderungen gegen Gesellschafter mit einer Restlaufzeit bis zu 1 Jahr 
+1508,Forderungen gegen Gesellschafter mit einer Restlaufzeit von mehr als 1 Jahr
+1510,Geleistete Anzahlungen auf Vorräte 
+1511,Geleistete Anzahlungen 7% Vorsteuer
+1516,Geleistete Anzahlungen 15% Vorsteuer
+1517,Geleistete Anzahlungen 16% Vorsteuer
+1521,Agenturwarenabrechnung 
+1525,Kautionen 
+1526,Kautionen mit einer Restlaufzeit bis zu 1 Jahr 
+1527,Kautionen mit einer Restlaufzeit von mehr als 1 Jahr
+1530,Forderungen gegen Personal 
+1531,Forderungen gegen Personal mit einer Restlaufzeit bis zu 1 Jahr 
+1537,Forderungen gegen Personal mit einer Restlaufzeit von mehr als 1 Jahr
+1540,Steuerüberzahlungen 
+1542,Steuererstattungsansprüche gegenüber anderen EG Ländern
+1545,Umsatzsteuerforderungen 
+1547,Forderungen aus entrichteten Verbrauchsteuern
+1548,Vorsteuer im Folgejahr abziehbar 
+1549,Körperschaftsteuerrückforderung 
+1550,Darlehen 
+1551,Darlehen mit einer Restlaufzeit bis zu 1 Jahr 
+1555,Darlehen mit einer Restlaufzeit von mehr als 1 Jahr
+1560,Aufzuteilende Vorsteuer 
+1561,Aufzuteilende Vorsteuer 7%
+1562,Aufzuteilende Vorsteuer aus innergemeinschaftlichem Erwerb 
+1565,Aufzuteilende Vorsteuer 16%
+1570,Abziehbare Vorsteuer 
+1571,Abziehbare Vorsteuer 7%
+1572,Abziehbare Vorsteuer aus innergemeinschaftlichem Erwerb 7%
+1573,Abziehbare Vorsteuer aus innergemeinschaftlichem Erwerb 16% 
+1575,Abziehbare Vorsteuer 16%
+1576,Abziehbare Vorsteuer 15%
+1577,Vorsteuer nach allgemeinen Durchschnittssätzen UStVA KZ 63 
+1578,Berichtigung des Vorsteuerabzugs früherer Jahre KZ 64 
+1580,Gegenkonto Vorsteuer § 4/3 EStG 
+1581,Auflösung Vorsteuer aus Vorjahr § 4/3 EStG 
+1584,Abziehbare Vorsteuer aus innergemeinschaftlichem Erwerb von Neufahrzeugen von Lieferanten ohne Umsatzsteuer Identifikationsnummer
+1586,Kürzung BerlinFG
+1588,Bezahlte Einfuhrumsatzsteuer 
+1590,Durchlaufende Posten 
+1592,Fremdgeld
+1593,Verrechnungskonto erhaltene Anzahlungen bei Buchung über Debitorenkonto 
+1594,Forderungen gegen verbundene Unternehmen 
+1595,Forderungen gegen verbundene Unternehmen mit einer Restlaufzeit bis zu 1 Jahr
+1596,Forderungen gegen verbundene Unternehmen mit einer Restlaufzeit von mehr als 1 Jahr
+1597,"Forderungen gegen Unternehmen, mit denen ein Beteiligungsverhältnis besteht"
+1598,"Forderungen gegen Unternehmen, mit denen ein Beteiligungsverhältnis besteht, mit einer Restlaufzeit bis zu 1 Jahr"
+1599,"Forderungen gegen Unternehmen, mit denen ein Beteiligungsverhältnis besteht, mit einer Restlaufzeit von mehr als 1 Jahr"
+1600,Verbindlichkeiten aus Lieferungen und Leistungen 
+1610,Verbindlichkeiten aus Lieferungen und Leistungen ohne Kontokorrent 
+1624,Verbindlichkeiten aus Lieferungen und Leistungen für Investitionen für § 4/3 EStG
+1625,Verbindlichkeiten aus Lieferungen und Leistungen ohne Kontokorrent mit einer Restlaufzeit bis zu 1 Jahr
+1626,Verbindlichkeiten aus Lieferungen und Leistungen ohne Kontokorrent mit einer Restlaufzeit von 1 bis 5 Jahren 
+1628,Verbindlichkeiten aus Lieferungen und Leistungen mit einer Restlaufzeit von mehr als 5 Jahren 
+1630,Verbindlichkeiten aus Lieferungen und Leistungen gegenüber verbundenen Unternehmen 
+1631,Verbindlichkeiten aus Lieferungen und Leistungen gegenüber verbundenen Unternehmen mit einer Restlaufzeit bis zu 1 Jahr
+1635,Verbindlichkeiten aus Lieferungen und Leistungen gegenüber verbundenen Unternehmen mit einer Restlaufzeit von 1 bis 5 Jahren
+1638,Verbindlichkeiten aus Lieferungen und Leistungen gegenüber verbundenen Unternehmen mit einer Restlaufzeit von mehr als 5 Jahren 
+1640,"Verbindlichkeiten aus Lieferungen und Leistungen gegenüber Unternehmen, mit denen ein Beteiligungsverhältnis besteht"
+1641,"Verbindlichkeiten aus Lieferungen und Leistungen gegenüber Unternehmen, mit denen ein Beteiligungsverhältnis besteht, mit einer Restlaufzeit bis zu 1 Jahr"
+1645,"Verbindlichkeiten aus Lieferungen und Leistungen gegenüber Unternehmen, mit denen ein Beteiligungsverhältnis besteht, mit einer Restlaufzeit von 1 bis 5 Jahren"
+1648,"Verbindlichkeiten aus Lieferungen und Leistungen gegenüber Unternehmen,mit denen ein Beteiligungsverhältnis besteht, mit einer Restlaufzeit von mehr als 5 Jahren"
+1650,Verbindlichkeiten aus Lieferungen und Leistungen gegenüber Gesellschaftern 
+1651,Verbindlichkeiten aus Lieferungen und Leistungen gegenüber Gesellschaftern mit einer Restlaufzeit bis zu 1 Jahr,
+1655,Verbindlichkeiten aus Lieferungen und Leistungen gegenüber Gesellschaftern mit einer Restlaufzeit von 1 bis 5 Jahren,
+1658,Verbindlichkeiten aus Lieferungen und Leistungen gegenüber Gesellschaftern mit einer Restlaufzeit von mehr als 5 Jahren,
+1659,Gegenkonto 1625 1658 bei Aufteilung Kreditorenkonto,
+1660,Schuldwechsel ,
+1661,Schuldwechsel mit einer Restlaufzeit bis zu 1 Jahr,
+1680,Schuldwechsel mit einer Restlaufzeit von 1 bis 5 Jahren, 
+1690,Schuldwechsel mit einer Restlaufzeit von mehr als 5 Jahren ,
+1700,Sonstige Verbindlichkeiten ,
+1701,Sonstige Verbindlichkeiten mit einer Restlaufzeit bis zu 1 Jahr,
+1702,Sonstige Verbindlichkeiten mit einer Restlaufzeit von 1 bis 5 Jahren,
+1703,Sonstige Verbindlichkeiten mit einer Restlaufzeit von mehr als 5 Jahren ,
+1704,Sonstige Verbindlichkeiten z.B. nach § 11 Abs. 2 Satz 2 EStG für § 4/3 EStG,
+1705,Darlehen ,
+1706,Darlehen mit einer Restlaufzeit bis zu 1 Jahr,
+1707,Darlehen mit einer Restlaufzeit von 1 bis 5 Jahren ,
+1708,Darlehen mit einer Restlaufzeit von mehr als 5 Jahren 
+1709,Gewinnverfügungskonto stiller Gesellschafter 
+1710,Erhaltene Anzahlungen (Verbindlichkeiten) 
+1711,"Erhaltene, versteuerte Anzahlungen 7% USt (Verbindlichkeiten)"
+1716,"Erhaltene, versteuerte Anzahlungen 15% USt (Verbindlichkeiten)"
+1717,"Erhaltene, versteuerte Anzahlungen 16% USt (Verbindlichkeiten)"
+1719,Erhaltene Anzahlungen mit einer Restlaufzeit bis zu 1 Jahr
+1720,Erhaltene Anzahlungen mit einer Restlaufzeit von 1 bis 5 Jahren
+1721,Erhaltene Anzahlungen mit einer Restlaufzeit von mehr als 5 Jahren 
+1722,Erhaltene Anzahlungen (von Vorräten offen abgesetzt) 
+1730,Kreditkartenabrechnung
+1731,Agenturwarenabrechnung 
+1732,Erhaltene Kautionen 
+1733,Erhaltene Kautionen mit einer Restlaufzeit bis zu 1 Jahr
+1734,Erhaltene Kautionen mit einer Restlaufzeit von 1 bis 5 Jahren 
+1735,Erhaltene Kautionen mit einer Restlaufzeit von mehr als 5 Jahren 
+1736,Verbindlichkeiten aus Betriebssteuern und Abgaben 
+1737,Verbindlichkeiten aus Betriebssteuern und Abgaben mit einer Restlaufzeit bis zu 1 Jahr
+1738,Verbindlichkeiten aus Betriebssteuern und Abgaben mit einer Restlaufzeit von 1 bis 5 Jahren 
+1739,Verbindlichkeiten aus Betriebssteuern und Abgaben mit einer Restlaufzeit von mehr als 5 Jahren 
+1740,Verbindlichkeiten aus Lohn und Gehalt 
+1741,Verbindlichkeiten aus Lohn und Kirchensteuer 
+1742,Verbindlichkeiten im Rahmen der sozialen Sicherheit 
+1743,Verbindlichkeiten im Rahmen der sozialen Sicherheit mit einer Restlaufzeit bis zu 1 Jahr
+1744,Verbindlichkeiten im Rahmen der sozialen Sicherheit mit einer Restlaufzeit von 1 bis 5 Jahren 
+1745,Verbindlichkeiten im Rahmen der sozialen Sicherheit mit einer Restlaufzeit von mehr als 5 Jahren 
+1746,Verbindlichkeiten aus Einbehaltungen 
+1747,Verbindlichkeiten für Verbrauchsteuern
+1750,Verbindlichkeiten aus Vermögensbildung 
+1751,Verbindlichkeiten aus Vermögensbildung mit einer Restlaufzeit bis zu 1 Jahr
+1752,Verbindlichkeiten aus Vermögensbildung mit einer Restlaufzeit von 1 bis 5 Jahren
+1753,Verbindlichkeiten aus Vermögensbildung mit einer Restlaufzeit von mehr als 5 Jahren 
+1754,Steuerzahlungen an andere EG Länder ,
+1755,Lohn und Gehaltsverrechnung ,
+1758,"USt Abzugsverfahren, 16% USt",
+1760,Umsatzsteuer nicht fällig ,
+1761,Umsatzsteuer nicht fällig 7%,
+1762,USt nicht fällig aus im Inland steuerpflichtigen EG Lieferungen ,
+1763,USt nicht fällig aus im Inland steuerpflichtigen EG Lieferungen 16%,
+1765,Umsatzsteuer nicht fällig 16%, 
+1766,Umsatzsteuer nicht fällig 15%,
+1767,USt aus im anderen EG Land steuerpflichtigen EG Lieferungen ,
+1768,USt aus im anderen EG Land steuerpflichtigen sonstigen Leistungen/Werklieferungen,
+1770,Umsatzsteuer ,
+1771,Umsatzsteuer 7%,
+1772,Umsatzsteuer aus innergemeinschaftlichem Erwerb,
+1773,Umsatzsteuer aus innergemeinschaftlichem Erwerb 16%,
+1775,Umsatzsteuer 16%,
+1776,Umsatzsteuer 15%
+1777,Umsatzsteuer aus im Inland steuerpflichtigen EG Lieferungen 
+1778,Umsatzsteuer aus im Inland steuerpflichtigen EG Lieferungen 16%
+1779,Umsatzsteuer aus innergemeinschaftlichem Erwerb ohne Vorsteuerabzug 
+1780,Umsatzsteuervorauszahlungen 
+1781,Umsatzsteuervorauszahlung 1/11 
+1782,"Nachsteuer, UStVA KZ 65"
+1783,"In Rechnung unberechtigt ausgewiesene Steuerbeträge, KZ 69 UStVA"
+1784,Umsatzsteuer aus innergemeinschaftlichem Erwerb von Neufahrzeugen von Lieferanten ohne Umsatzsteuer Identifikationsnummer
+1788,Einfuhrumsatzsteuer aufgeschoben bis 
+1789,Umsatzsteuer laufendes Jahr 
+1790,Umsatzsteuer Vorjahr 
+1791,Umsatzsteuer frühere Jahre 
+1792,Sonstige Verrechnungskonten (Interimskonten) 
+1793,Verrechnungskonto geleistete Anzahlungen bei Buchung über Kreditorenkonto
+1800,Privatentnahmen allgemein Vollhafter/Einzelunternehmer
+1810,Private Steuern Vollhafter/Einzelunternehmer
+1811,Private ESt Vorauszahlungen laufendes Jahr Vollhafter/Einzelunternehmer
+1812,Private KiSt Vorauszahlung laufendes Jahr Vollhafter/Einzelunternehmer
+1813,Private Vermögensteuer Vollhafter/Einzelunternehmer
+1814,Privat ESt Vorjahre Vollhafter/Einzelunternehmer
+1815,Private KiSt Vorjahre Vollhafter/Einzelunternehmer
+1816,Private Kapitalertragsteuer Vollhafter/Einzelunternehmer
+1817,Private Körperschaftsteuer Vollhafter/Einzelunternehmer
+1818,Private Steuern Vollhafter/Einzelunternehmer
+1819,Private Steuern Vollhafter/Einzelunternehmer
+1820,Sonderausgaben beschränkt abzugsfähig Vollhafter/Einzelunternehmer
+1821,Rentenversicherung Vollhafter/Einzelunternehmer
+1822,Krankenversicherung Vollhafter/Einzelunternehmer
+1823,Unfallversicherung Vollhafter/Einzelunternehmer
+1824,Lebensversicherung Vollhafter/Einzelunternehmer
+1825,Haftpflichtversicherung Vollhafter/Einzelunternehmer
+1826,Bausparkassenbeiträge Vollhafter/Einzelunternehmer
+1827,Sonderausgaben beschränkt abzugsfähig Vollhafter/Einzelunternehmer
+1829,Sonderausgaben beschränkt abzugsfähig Vollhafter/Einzelunternehmer
+1831,Renten Vollhafter/Einzelunternehmer
+1832,Dauernde Lasten Vollhafter/Einzelunternehmer
+1833,Unterhalt Ehegatte Vollhafter/Einzelunternehmer
+1834,Berufsausbildung Vollhafter/Einzelunternehmer
+1835,Steuerberatungskosten Vollhafter/Einzelunternehmer
+1836,Sonderausgaben unbeschränkt abzugsfähig Vollhafter/Einzelunternehmer
+1840,"Zuwendungen, Spenden"
+1850,Außergewöhnliche Belastungen Vollhafter/Einzelunternehmer
+1860,Grundstücksaufwand Vollhafter/Einzelunternehmer
+1870,Grundstücksertrag Vollhafter/Einzelunternehmer
+1880,Unentgeltliche Wertabgaben Vollhafter/Einzelunternehmer
+1890,Privateinlagen Vollhafter/Einzelunternehmer
+1900,Privatentnahmen allgemein Teilhafter
+1910,Privatsteuern Teilhafter
+1920,Sonderausgaben beschränkt abzugsfähig Teilhafter
+1930,Sonderausgaben unbeschränkt abzugsfähig Teilhafter
+1940,"Zuwendungen, Spenden"
+1950,Außergewöhnliche Belastungen Teilhafter
+1960,Grundstücksaufwand Teilhafter
+1970,Grundstücksertrag Teilhafter
+1980,Unentgeltliche Wertabgaben Teilhafter
+1990,Privateinlagen Teilhafter
+2000,Außerordentliche Aufwendungen 
+2001,Außerordentliche Aufwendungen finanzwirksam
+2005,Außerordentliche Aufwendungen nicht finanzwirksam
+2010,Betriebsfremde Aufwendungen (soweit nicht außerordentlich)
+2020,Periodenfremde Aufwendungen (soweit nicht außerordentlich)
+2100,Zinsen und ähnliche Aufwendungen 
+2103,"Steuerlich abzugsfähige, andere Nebenleistungen zu Steuern"
+2104,"Steuerlich nicht abzugsfähige, andere Nebenleistungen zu Steuern"
+2107,Zinsaufwendungen § 233a AO betriebliche Steuern
+2108,Zinsaufwendungen § 233a bis § 237 AO Personensteuern
+2109,Zinsaufwendungen an verbundene Unternehmen 
+2110,Zinsaufwendungen für kurzfristige Verbindlichkeiten 
+2115,Zinsen und ähnliche Aufwendungen 100% / 50% nicht abzugsfährig
+2116,Zinsen und ähnliche Aufwendungen an verbundene Unternehmen 100% / 50% nicht abzugsfähig
+2118,In Dauerschuldzinsen umqualifizierte Zinsen auf kurzfristige Verbindlichkeiten 
+2119,Zinsaufwendungen für kurzfristige Verbindlichkeiten an verbundene Unternehmen 
+2120,Zinsaufwendungen für langfristige Verbindlichkeiten 
+2126,Zinsen zur Finanzierung des Anlagevermögen
+2127,Renten und dauernde Lasten aus Gründung/Erwerb § 8 GewStG 
+2128,Zinsaufwendungen an Mitunternehmer für die Hingabe von langfristigem Kapital § 15 EStG 
+2129,Zinsaufwendungen für langfristige Verbindlichkeiten an verbundene Unternehmen 
+2130,Diskontaufwendungen 
+2139,Diskontaufwendungen an verbundene Unternehmen 
+2140,Zinsähnliche Aufwendungen 
+2149,Zinsähnliche Aufwendungen an verbundene Unternehmen 
+2150,Aufwendungen aus Kursdifferenzen 
+2165,Aufwendungen aus der Währungsumstellung auf den Euro (Artikel 43 Abs. 1 EGHGB)
+2166,Aufwendungen aus Bewertung Finanzmittelfonds
+2170,Nicht abziehbare Vorsteuer 
+2171,Nicht abziehbare Vorsteuer 7%
+2175,Nicht abziehbare Vorsteuer 16% 
+2200,Körperschaftsteuer 
+2203,Körperschaftsteuer für Vorjahre 
+2205,Anrechenbare Körperschaftsteuer auf vereinnahmte Kapitalerträge
+2208,Solidaritätszuschlag 
+2209,Solidaritätszuschlag für Vorjahre
+2210,Kapitalertragsteuer 25%
+2212,Kapitalertragsteuer 20%
+2213,Anrechenbarer Solidaritätszuschlag auf Kapitalertragsteuer 25%
+2214,Anrechenbarer Solidaritätszuschlag auf Kapitalertragsteuer 20%
+2215,Zinsabschlagsteuer 
+2218,Anrechenbarer Solidaritätszuschlag auf Zinsabschlagsteuer
+2223,Vermögensteuer für Vorjahre 
+2280,Steuernachzahlungen Vorjahre für Steuern vom Einkommen und Ertrag 
+2282,Steuererstattungen Vorjahre für Steuern vom Einkommen und Ertrag 
+2284,Erträge aus der Auflösung von Rückstellungen für Steuern vom Einkommen und Ertrag 
+2285,Steuernachzahlungen Vorjahre sonstige Steuern 
+2287,Steuererstattungen Vorjahre für sonstige Steuern 
+2289,Erträge aus der Auflösung von Rückstellungen für sonstige Steuern 
+2300,Sonstige Aufwendungen 
+2307,Sonstige Aufwendungen betriebsfremd und regelmäßig 
+2309,Sonstige Aufwendungen unregelmäßig 
+2310,Anlagenabgänge Sachanlagen (Restbuchwert bei Buchverlust) 
+2311,Anlagenabgänge immaterielle Vermögensgegenstände (Restbuchwert bei Buchverlust) 
+2312,Anlagenabgänge Finanzanlagen (Restbuchwert bei Buchverlust) 
+2315,Anlagenabgänge Sachanlagen (Restbuchwert bei Buchgewinn) 
+2316,Anlagenabgänge immaterielle Vermögensgegenstände (Restbuchwert bei Buchgewinn) 
+2317,Anlagenabgänge Finanzanlagen (Restbuchwert bei Buchgewinn) 
+2320,Verluste aus dem Abgang von Gegenständen des Anlagevermögens 
+2325,Verluste aus dem Abgang von Gegenständen des Umlaufvermögens (außer Vorräten) 
+2340,Einstellungen in Sonderposten mit Rücklageanteil (steuerfreie Rücklagen) 
+2341,Einstellungen in Sonderposten mit Rücklageanteil (Ansparabschreibungen)
+2345,Einstellungen in Sonderposten mit Rücklageanteil (Sonderabschreibungen) 
+2346,Einstellungen in Sonderposten mit Rücklageanteil (§ 52 Abs.16 EStG) 
+2347,Einstellungen in Sonderposten mit Rücklageanteil (aus der Währungsumstellung auf den Euro)
+2348,Aufwendungen aus der Zuschreibung von steuerlich nierdrig bewerteten Rückstellungen
+2350,Grundstücksaufwendungen 
+2375,Grundsteuer 
+2380,"Zuwendungen, Spenden, steuerlich nicht abziehbar"
+2381,"Zuwendungen, Spenden für wissenschaftliche und kulturelle Zwecke"
+2382,"Zuwendungen, Spenden für mildtätige Zwecke"
+2383,"Zuwendungen, Spenden für kirchliche, religiöse und gemeinnützige Zwecke",
+2384,"Zuwendungen, Spenden an politische Parteien",
+2385,Nicht abziehbare Hälfte der Aufsichtsratsvergütungen,
+2386,Abziehbare Aufsichtsratsvergütungen ,
+2387,"Zuwendungen, Spenden an Stiftungen für gemeinnützige Zwecke i.S.d. § 52 Abs.2 Nr. 1 3 AO",
+2388,"Zuwendungen, Spenden an Stiftungen für gemeinnützige Zwecke i.S.d. § 52 Abs.2 Nr. 4 AO",
+2389,"Zuwendungen, Spenden an Stiftungen für kirchliche, religiöse und gemeinnützige Zwecke",
+2390,"Zuwendungen, Spenden an Stiftungen für wissenschaftliche, mildtätige, kulturelle Zwecke",
+2400,Forderungsverluste (übliche Höhe) ,
+2401,Forderungsverluste 7% USt (übliche Höhe),
+2402,Forderungsverluste aus steuerfreien EG Lieferungen (übliche Höhe) ,
+2403,Forderungsverluste aus im Inland steuerpflichtigen EG Lieferungen 7% USt (übliche Höhe),
+2404,Forderungsverluste aus im Inland steuerpflichtigen EG Lieferungen 16% USt (übliche Höhe) ,
+2405,Forderungsverluste 16% USt (übliche Höhe),
+2407,Forderungsverluste 15% USt (übliche Höhe),
+2409,Forderungsverluste aus im Inland steuerpflichtigen EG Lieferungen 15% USt (übliche Höhe), 
+2430,"Forderungsverluste, unüblich hoch"
+2450,Einstellungen in die Pauschalwertberichtigung zu Forderungen 
+2451,Einstellung in die Einzelwertberichtigung zu Forderungen
+2490,Aufwendungen aus Verlustübernahme 
+2492,Abgeführte Gewinne aufgrund einer Gewinngemeinschaft 
+2493,Abgeführte Gewinnanteile an stille Gesellschafter § 8 GewStG 
+2494,Abgeführte Gewinne aufgrund eines Gewinn oder Teilgewinnabführungsvertrags 
+2495,Einstellungen in die Kapitalrücklage nach den Vorschriften über die vereinfachte Kapitalherabsetzung 
+2496,Einstellungen in die gesetzliche Rücklage 
+2497,Einstellungen in satzungsmäßige Rücklagen 
+2498,Einstellungen in die Rücklage für eigene Anteile 
+2499,Einstellungen in andere Gewinnrücklagen 
+2500,Außerordentliche Erträge 
+2501,Außerordentliche Erträge finanzwirksam
+2505,Außerordentliche Erträge nicht finanzwirksam
+2510,Betriebsfremde Erträge (soweit nicht außerordentlich) 
+2520,Periodenfremde Erträge (soweit nicht außerordentlich) 
+2600,Erträge aus Beteiligungen 
+2615,Laufende Erträge aus Anteilen an Kapitalgesellschaften (Beteiligung) 100% / 50% steuerfrei
+2616,Laufende Erträge aus Anteilen an Kapitalgesellschaften (verbundene Unternehmen) 100% / 50% steuerfrei
+2617,Gewinne aus Anteilen an nicht steuerbefreiten inländischen Kapitalgesellschaften § 9 Nr. 2a GewStG
+2618,Gewinnanteile aus Mitunternehmerschaften § 9 GewStG 
+2619,Erträge aus Beteiligungen an verbundenen Unternehmen 
+2620,Erträge aus anderen Wertpapieren und Ausleihungen des Finanzanlagevermögens 
+2625,Laufende Erträge aus Anteilen an Kapitalgesellschaften (Finanzanlagevermögen) 100% / 50% steuerfrei
+2626,Laufende Erträge aus Anteilen an Kapitalgesellschaften (verbundene Unternehmen) 100% / 50% steuerfrei
+2649,Erträge aus anderen Wertpapieren und Ausleihungen des Finanzanlagevermögens aus verbundenen Unternehmen 
+2650,Sonstige Zinsen und ähnliche Erträge 
+2655,Laufende Erträge aus Anteilen an Kapitalgesellschaften (Umlaufvermögen) 100% / 50% steuerfrei
+2656,Laufende Erträge aus Anteilen an Kapitalgesellschaften (verbundene Unternehmen) 100% / 50% steuerfrei
+2657,Zinserträge § 233a AO betriebliche Steuern 
+2658,Zinserträge § 233a AO Körperschaftsteuer/Vermögensteuer
+2659,Sonstige Zinsen und ähnliche Erträge aus verbundenen Unternehmen 
+2660,Erträge aus Kursdifferenzen 
+2665,Erträge aus der Währungsumstellung auf den Euro (Artikel 43 Abs. 1 EGHGB)
+2666,Erträge aus Bewertung Finanzmittelfonds
+2670,Diskonterträge 
+2679,Diskonterträge aus verbundenen Unternehmen 
+2680,Zinsähnliche Erträge 
+2689,Zinsähnliche Erträge aus verbundenen Unternehmen 
+2700,Sonstige Erträge 
+2705,Sonstige Erträge betrieblich und regelmäßig 
+2707,Sonstige Erträge betriebsfremd und regelmäßig 
+2709,Sonstige Erträge unregelmäßig 
+2710,Erträge aus Zuschreibungen des Sachanlagevermögens 
+2711,Erträge aus Zuschreibungen des immateriellen Anlagevermögens 
+2712,Erträge aus Zuschreibungen des Finanzanlagevermögens
+2715,Erträge aus Zuschreibungen des Umlaufvermögens 
+2720,Erträge aus dem Abgang von Gegenständen des Anlagevermögens 
+2725,Erträge aus dem Abgang von Gegenständen des Umlaufvermögens (außer Vorräten) 
+2730,Erträge aus Herabsetzung der Pauschalwertberichtigung zu Forderungen 
+2731,Erträge aus Herabsetzung der Einzelwertberichtigung zu Forderungen
+2732,Erträge aus abgeschriebenen Forderungen 
+2734,Erträge aus der steuerlich nierdrigeren Bewertung von verbindlichkeiten 
+2735,Erträge aus der Auflösung von Rückstellungen 
+2737,Erträge aus der Auflösung von Sonderposten mit Rücklageanteil (aus der Währungsumstellung auf den Euro)
+2738,Erträge aus der Auflösung von Sonderposten mit Rücklageanteil § 52 Abs.16 EStG
+2739,Erträge aus der Auflösung von Sonderposten mit Rücklageanteil (Ansparabschreibungen)
+2740,Erträge aus der Auflösung von Sonderposten mit Rücklageanteil (steuerfreie Rücklagen) 
+2741,Erträge aus der Auflösung von Sonderposten mit Rücklageanteil (Sonderabschreibungen) 
+2742,Versicherungsentschädigungen 
+2743,Investitionszuschüsse (steuerpflichtig) 
+2744,Investionszulagen (steuerfrei) 
+2745,Erträge aus Kapitalherabsetzung 
+2750,Grundstückserträge 
+2790,Erträge aus Verlustübernahme 
+2792,Erhaltene Gewinne aufgrund einer Gewinngemeinschaft 
+2794,Erhaltene Gewinne aufgrund eines Gewinn oder Teilgewinnabführungsvertrags 
+2795,Entnahmen aus der Kapitalrücklage 
+2796,Entnahmen aus der gesetzlichen Rücklage 
+2797,Entnahmen aus satzungsmäßigen Rücklagen 
+2798,Entnahmen aus der Rücklage für eigene Anteile 
+2799,Entnahmen aus anderen Gewinnrücklagen 
+2860,Gewinnvortrag nach Verwendung 
+2862,Gewinnvortrag 40% Vorbelastung 
+2864,Gewinnvortrag 0% Vorbelastung (EK04)
+2866,Gewinnvortrag 0% Vorbelastung (EK02)
+2868,Verlustvortrag nach Verwendung 
+2869,Vortrag auf neue Rechnung (GuV) 
+2870,Vorabausschüttung 
+2890,Verrechneter kalkulatorischer Unternehmerlohn 
+2891,Verrechnete kalkulatorische Miete und Pacht 
+2892,Verrechnete kalkulatorische Zinsen 
+2893,Verrechnete kalkulatorische Abschreibungen 
+2894,Verrechnete kalkulatorische Wagnisse 
+2895,Verrechneter kalkulatorischer Lohn für unentgeltliche Mitarbeiter
+2990,Aufwendungen/Erträge aus Umrechnungsdifferenzen
+3000,"Roh, Hilfs und Betriebsstoffe"
+3090,Energiestoffe (Fertigung) 
+3100,Fremdleistungen 
+3150,Leistungen von ausländischen Unternehmen (Nullregelung)
+3200,Wareneingang 
+3300,Wareneingang 7% VSt
+3400,Wareneingang 16% VSt
+3420,Innergemeinschaftlicher Erwerb 7% Vorsteuer und 7% Umsatzsteuer
+3425,Innergemeinschaftlicher Erwerb 16% Vorsteuer und 16% Umsatzsteuer 
+3430,Innergemeinschaftlicher Erwerb ohne Vorsteuerabzug 7% Umsatzsteuer
+3435,Innergemeinschaftlicher Erwerb ohne Vorsteuer und 16% Umsatzsteuer
+3440,Innergemeinschaftlicher Erwerb von Neufahrzeugen von Lieferanten ohne Umsatzsteuer Identifikationsnummer 16% Vorsteuer und 16% Umsatzsteuer
+3500,Wareneingang 9% VSt
+3501,Wareneingang 5% VSt
+3505,Wareneingang 6% VSt
+3530,Wareneingang 9% VSt
+3535,Wareneingang 10% VSt
+3540,Wareneingang 9% VSt
+3550,Steuerfreier innergemeinschaftlicher Erwerb 
+3600,Nicht abziehbare Vorsteuer 
+3610,Nicht abziehbare Vorsteuer 7%
+3650,Nicht abziehbare Vorsteuer 16% 
+3700,Nachlässe 
+3710,Nachlässe 7% VSt
+3720,Nachlässe 16% VSt
+3723,Nachlässe 15% VSt
+3724,Nachlässe aus innergemeinschaftlichem Erwerb 7% Vorsteuer und 7% Umsatzsteuer
+3725,Nachlässe aus innergemeinschaftlichem Erwerb 16% Vorsteuer und 16% Umsatzsteuer
+3727,Nachlässe aus innergemeinschaftlichem Erwerb 15% Vorsteuer und 15% Umsatzsteuer
+3730,Erhaltene Skonti 
+3731,Erhaltene Skonti 7% VSt
+3735,Erhaltene Skonti 16% VSt
+3736,Erhaltene Skonti 15% VSt
+3740,Erhaltene Boni 
+3750,Erhaltene Boni 7% VSt
+3760,Erhaltene Boni 16% VSt
+3765,Erhaltene Boni 15% VSt
+3770,Erhaltene Rabatte 
+3780,Erhaltene Rabatte 7% VSt
+3790,Erhaltene Rabatte 16% VSt
+3795,Erhaltene Rabatte 15% VSt
+3800,Bezugsnebenkosten
+3830,Leergut 
+3850,Zölle und Einfuhrabgaben 
+3960,"Bestandsveränderungen Roh, Hilfs und Betriebsstoffe sowie bezogene Waren"
+3970,"Bestand Roh, Hilfs und Betriebsstoffe"
+3980,Bestand Waren 
+3990,Verrechnete Stoffkosten (Gegenkonto zu 4000 99) 
+4000,Material und Stoffverbrauch 
+4100,Löhne und Gehälter 
+4110,Löhne 
+4120,Gehälter 
+4124,Geschäftsführergehälter der GmbH Gesellschafter
+4125,Ehegattengehalt 
+4126,Tantiemen
+4127,Geschäftsführergehälter
+4128,Vergütungen an angestellte Mitunternehmer § 15 EStG 
+4130,Gesetzliche soziale Aufwendungen 
+4137,Gesetzliche soziale Aufwendungen für Mitunternehmer § 15 EStG 
+4138,Beiträge zur Berufsgenossenschaft 
+4139,Ausgleichsabgabe im Sinne des Schwerbehindertengesetzes 
+4140,"Freiwillige soziale Aufwendungen, lohnsteuerfrei"
+4145,"Freiwillige soziale Aufwendungen, lohnsteuerpflichtig"
+4149,Pauschale Lohnsteuer auf sonstige Bezüge (z.B. Fahrtkostenzuschüsse)
+4150,Krankengeldzuschüsse 
+4160,Versorgungskassen 
+4165,Aufwendungen für Altersversorgung 
+4167,Pauschale Lohnsteuer auf sonstige Bezüge (z.B. Direktversicherungen)
+4168,Aufwendungen für Altersversorgung für Mitunternehmer § 15 EStG 
+4169,Aufwendungen für Unterstützung 
+4170,Vermögenswirksame Leistungen 
+4175,Fahrtkostenerstattung Wohnung/Arbeitsstätte 
+4180,Bedienungsgelder 
+4190,Aushilfslöhne 
+4199,Lohnsteuer für Aushilfen 
+4200,Raumkosten 
+4210,Miete 
+4218,Gewerbesteuerlich zu berücksichtigende Miete § 8 GewStG 
+4219,Vergütungen an Mitunternehmer für die mietweise Überlassung ihrer Wirtschaftsgüter § 15 EStG 
+4220,Pacht 
+4228,Gewerbesteuerlich zu berücksichtigende Pacht § 8 GewStG 
+4229,Vergütungen an Mitunternehmer für die pachtweise Überlassung ihrer Wirtschaftsgüter § 15 EStG 
+4230,Heizung 
+4240,"Gas, Strom, Wasser"
+4250,Reinigung 
+4260,Instandhaltung betrieblicher Räume 
+4270,Abgaben für betrieblich genutzten Grundbesitz 
+4280,Sonstige Raumkosten 
+4300,Nicht abziehbare Vorsteuer 
+4301,Nicht abziehbare Vorsteuer 7%
+4305,Nicht abziehbare Vorsteuer 16% 
+4320,Gewerbesteuer 
+4340,Sonstige Betriebssteuern 
+4350,Verbrauchsteuer 
+4355,Ökosteuer
+4360,Versicherungen 
+4370,Nettoprämie für Rückdeckung künftiger Versorgungsleistungen
+4380,Beiträge 
+4390,Sonstige Abgaben 
+4396,Steuerlich abzugsfähige Verspätungszuschläge und Zwangsgelder
+4397,Steuerlich nicht abzugsfähige Verspätungszuschläge und Zwangsgelder
+4500,Fahrzeugkosten 
+4510,Kfz Steuern
+4520,Kfz Versicherungen 
+4530,Laufende Kfz Betriebskosten 
+4540,Kfz Reparaturen ,
+4550,Garagenmieten ,
+4570,Fremdfahrzeuge ,
+4580,Sonstige Kfz Kosten ,
+4600,Werbe und Reisekosten ,
+4610,Werbekosten ,
+4630,"Geschenke bis DM 75,",
+4635,"Geschenke über DM 75,",
+4638,Geschenke ausschließlich betrieblich genutzt ,
+4640,Repräsentationskosten ,
+4650,Bewirtungskosten ,
+4653,Aufmerksamkeiten, 
+4654,Nicht abzugsfähige Bewirtungskosten ,
+4655,Nicht abzugsfähige Betriebsausgaben ,
+4660,Reisekosten Arbeitnehmer ,
+4663,Reisekosten Arbeitnehmer mit Vorsteuerabzug (für öffentliche Verkehrsmittel),
+4664,Reisekosten Arbeitnehmer Verpflegungsmehraufwand
+4666,Reisekosten Arbeitnehmer Übernachtungsaufwand
+4668,Kilometergelderstattung Arbeitnehmer
+4670,Reisekosten Unternehmer 
+4673,Reisekosten Unternehmer mit Vorsteuerabzug (für öffentliche Verkehrsmittel)
+4674,Reisekosten Unternehmer Verpflegungsmehraufwand 
+4676,Reisekosten Unternehmer Übernachtungsaufwand
+4678,Kilometergelderstattung Unternehmer 
+4700,Kosten der Warenabgabe 
+4710,Verpackungsmaterial 
+4730,Ausgangsfrachten 
+4750,Transportversicherungen 
+4760,Verkaufsprovisionen 
+4780,Fremdarbeiten 
+4790,Aufwand für Gewährleistungen 
+4800,Reparaturen und Instandhaltungen von technischen Anlagen und Maschinen 
+4805,Reparaturen und Instandhaltungen von anderen Anlagen und Betriebs und Geschäftsausstattung 
+4806,Wartungskosten für Hard und Software
+4809,Sonstige Reparaturen und Instandhaltungen 
+4810,Mietleasing 
+4814,Gewerbesteuerlich zu berücksichtigendes Mietleasing § 8 GewStG 
+4815,Kaufleasing 
+4820,Abschreibungen auf Aufwendungen für die Ingangsetzung und Erweiterung des Geschäftsbetriebs 
+4821,Abschreibungen auf Aufwendungen für die Währungsumstellung auf den Euro
+4822,Abschreibungen auf immaterielle Vermögensgegenstände 
+4824,Abschreibungen auf den Geschäfts oder Firmenwert 
+4826,Außerplanmäßige Abschreibungen auf immaterielle Vermögensgegenstände 
+4830,Abschreibungen auf Sachanlagen 
+4840,Außerplanmäßige Abschreibungen auf Sachanlagen 
+4850,Abschreibungen auf Sachanlagen aufgrund steuerlicher Sondervorschriften 
+4855,Sofortabschreibung geringwertiger Wirtschaftsgüter 
+4860,"Abschreibungen auf aktivierte, geringwertige Wirtschaftsgüter"
+4865,"Außerplanmäßige Abschreibungen auf aktivierte, geringwertige Wirtschaftsgüter"
+4870,Abschreibungen auf Finanzanlagen 
+4871,Abschreibungen auf Finanzanlagen 100% / 50% nicht abzugsfähig
+4872,Abschreibungen aufgrund von Verlustanteilen an Mitunternehmerschaften § 8 GewStG 
+4873,Abschreibungen auf Finanzanlagen aufgrund steuerlicher Sondervorschriften 100% / 50% nicht abzugsfähig
+4874,Abschreibungen auf Finanzanlagen aufgrund steuerlicher Sondervorschriften 
+4875,Abschreibungen auf Wertpapiere des Umlaufvermögens 
+4876,Abschreibungen auf Wertpapiere des Umlaufvermögens 100% / 50% nicht abzugsfähig
+4879,Vorwegnahme künftiger Wertschwankungen bei Wertpapieren des Umlaufvermögens 
+4880,Abschreibungen auf Umlaufvermögen ohne Wertpapiere (soweit unübliche Höhe) 
+4882,"Abschreibungen auf Umlaufvermögen, steuerrechtlich bedingt (soweit unübliche Höhe)"
+4885,Vorwegnahme künftiger Wertschwankungen im Umlaufvermögen außer Vorräte und Wertpapiere des Umlaufvermögens 
+4886,Abschreibungen auf Umlaufvermögen außer Vorräte und Wertpapiere des Umlaufvermögens (soweit übliche Höhe) 
+4887,"Abschreibungen auf Umlaufvermögen, steuerrechtlich bedingt (soweit übliche Höhe)"
+4890,Vorwegnahme künftiger Wertschwankungen im Umlaufvermögen (soweit unübliche Höhe) 
+4900,Sonstige betriebliche Aufwendungen 
+4905,Sonstige Aufwendungen betrieblich und regelmäßig 
+4909,Fremdleistungen
+4910,Porto 
+4920,Telefon 
+4925,Telefax
+4930,Bürobedarf 
+4940,"Zeitschriften, Bücher"
+4945,Fortbildungskosten 
+4946,Freiwillige Sozialleistungen
+4948,Vergütungen an freiberufliche Mitunternehmer § 15 EStG 
+4950,Rechts und Beratungskosten 
+4955,Buchführungskosten 
+4957,Abschluß und Prüfungskosten 
+4960,Mieten für Einrichtungen 
+4968,Gewerbesteuerlich zu berücksichtigende Miete für Einrichtungen § 8 GewStG 
+4969,Aufwendungen für Abraum und Abfallbeseitigung
+4970,Nebenkosten des Geldverkehrs 
+4975,Aufwendungen aus Anteilen an Kapitalgesellschaften 100% / 50% nicht abzugsfähig
+4980,Betriebsbedarf 
+4985,Werkzeuge und Kleingeräte 
+4990,Kalkulatorischer Unternehmerlohn 
+4991,Kalkulatorische Miete und Pacht 
+4992,Kalkulatorische Zinsen 
+4993,Kalkulatorische Abschreibungen 
+4994,Kalkulatorische Wagnisse 
+4995,Kalkulatorischer Lohn für unentgeltliche Mitarbeiter
+4996,Herstellungskosten 
+4997,Verwaltungskosten 
+4998,Vertriebskosten 
+4999,Gegenkonto 4996 4998 
+7000,"Unfertige Erzeugnisse, unfertige Leistungen (Bestand)"
+7050,Unfertige Erzeugnisse (Bestand) 
+7080,Unfertige Leistungen (Bestand) 
+7090,In Ausführung befindliche Bauaufträge 
+7095,In Arbeit befindliche Aufträge 
+7100,Fertige Erzeugnisse und Waren (Bestand) 
+7110,Fertige Erzeugnisse (Bestand) 
+7140,Waren (Bestand) 
+8100,Steuerfreie Umsätze § 4 Nr. 8 ff UStG 
+8110,Sonstige steuerfreie Umsätze Inland 
+8120,Steuerfreie Umsätze § 4 Nr. 1a UStG 
+8125,Steuerfreie innergemeinschaftliche Lieferungen § 4 Nr. 1b UStG
+8130,Lieferungen des ersten Abnehmers bei innergemeinschaftlichen Dreiecksgeschäften § 25b Abs. 2 UStG
+8135,Steuerfreie innergemeinschaftliche Lieferungen von Neufahrzeugen an Abnehmer ohne Umsatzsteuer Identifikationsnummer
+8140,Steuerfreie Umsätze Offshore usw.
+8150,Sonstige steuerfeie Umsätze (z.B. § 4 Nr. 2 7 UStG)
+8196,Erlöse aus Geldspielautomaten 16% USt
+8200,Erlöse 
+8300,Erlöse 7% USt
+8310,Erlöse aus im Inland steuerpflichtigen EG Lieferungen 7% USt
+8315,Erlöse aus im Inland steuerpflichtigen EG Lieferungen 16% USt
+8320,Erlöse aus im anderen EG Land steuerpflichtigen Lieferungen 
+8339,Erlöse aus im anderen EG Land steuerpflichtigen sonstigen Leistungen (Nullregelung) 
+8400,Erlöse 16% USt
+8500,Provisionserlöse 
+8504,"Provisionserlöse, steuerfrei (§ 4 Nr. 8 ff UStG)"
+8505,"Provisionserlöse, steuerfrei (§ 4 Nr. 5 UStG)"
+8506,Provisionserlöse 7% USt
+8508,Provisionserlöse 16% USt
+8520,Erlöse Abfallverwertung 
+8540,Erlöse Leergut 
+8590,Verrechnete sonstige Sachbezüge (keine Waren) 
+8591,Sachbezüge 7% USt (Waren)
+8595,Sachbezüge 16% USt (Waren)
+8600,Sonstige Erlöse betrieblich und regelmäßig 
+8610,Verrechnet sonstige Sachbezüge
+8611,Verrechnete sonstige Sachbezüge 16% USt (z.B. KFZ Gestellung)
+8614,Verrechnete sonstige Sachbezüge ohne Umsatzsteuer
+8625,"Sonstige Erlöse betrieblich und regelmäßig, steuerfrei"
+8630,Sonstige Erlöse betrieblich und regelmäßig 7% USt
+8640,Sonstige Erlöse betrieblich und regelmäßig 16% USt
+8650,Erlöse Zinsen und Diskontspesen 
+8660,Erlöse Zinsen und Diskontspesen aus verbundenen Unternehmen 
+8700,Erlösschmälerungen 
+8705,Erlösschmälerungen aus steuerfreien Umsätzen § 4 Nr.1a UStG
+8710,Erlösschmälerungen 7% USt
+8720,Erlösschmälerungen 16% USt
+8723,Erlösschmälerungen 15% USt
+8724,Erlösschmälerungen aus steuerfreien innergemeinschaftlichen Lieferungen 
+8725,Erlösschmälerungen aus im Inland steuerpflichtigen EG Lieferungen 7% USt
+8726,Erlösschmälerungen aus im Inland steuerpflichtigen EG Lieferungen 16% USt
+8727,Erlösschmälerungen aus im anderen EG Land steuerpflichtigen Lieferungen 
+8729,Erlösschmälerungen aus im Inland steuerpflichtigen EG Lieferungen 15% USt
+8730,Gewährte Skonti
+8731,Gewährte Skonti 7% USt
+8735,Gewährte Skonti 16% USt
+8736,Gewährte Skonti 15% USt
+8740,Gewährte Boni 
+8750,Gewährte Boni 7% USt
+8760,Gewährte Boni 16% USt
+8765,Gewährte Boni 15% USt
+8770,Gewährte Rabatte
+8780,Gewährte Rabatte 7% USt
+8790,Gewährte Rabatte 16% USt
+8795,Gewährte Rabatte 15% USt
+8800,Erlöse aus Anlagenverkäufen 
+8801,Erlöse aus Verkäufen Sachanlagevermögen 16% (bei Buchverlust)
+8817,Erlöse aus Verkäufen immaterieller Vermögensgegenstände (bei Buchverlust)
+8818,Erlöse aus Verkäufen Finanzanlagen (bei Buchverlust)
+8820,Erlöse aus Verkäufen Sachanlagevermögen 16% (bei Buchgewinn)
+8837,Erlöse aus Verkäufen immaterieller Vermögensgegenstände (bei Buchgewinn)
+8838,Erlöse aus Verkäufen Finanzanlagen (bei Buchgewinn)
+8900,Unentgeltliche Wertabgaben
+8905,Entnahme von Gegenständen ohne Umsatzsteuer 
+8908,Entnahme von Gegenstände 16% USt nach § 1 Abs.1 Nr.2a UStG (z.B. Warenentnahmen) bis 31.03.99
+8909,Entnahme von Gegenstände 15% USt nach § 1 Abs.1 Nr.2a UStG (z.B. Warenentnahmen) bis 31.03.98
+8910,Entnahme durch den Unternehmer für Zwecke ausserhalb des Unternehmens (Waren) 16% USt
+8915,Entnahme durch den Unternehmer für Zwecke ausserhalb des Unternehmens (Waren) 7% USt
+8918,Entnahme von Gegenstände 7% USt nach § 1 Abs.1 Nr.2a UStG (z.B. Warenentnahmen) bis 31.03.99
+8919,Entnahme durch den Unternehmer für Zwecke ausserhalb des Unternehmens (Waren) ohne USt
+8920,Verwendung von Gegenständen für Zwecke ausserhalb des Unternehmens 16% USt
+8924,Verwendung von Gegenständen für Zwecke ausserhalb des Unternehmens ohne USt
+8925,Unentgeltliche Erbringung einer sonstigen Leistung 16% USt
+8928,Entnahme von sonstige Leistungen 16% USt nach§ 1 Abs.1 Nr.2b UStG (z.B. Kfz und Telefonkosten) bis 31.03.99
+8929,Unentgeltliche Erbringung einer sonstigen Leistung ohne Umsatzsteuer
+8930,Verwendung von Gegenständen für Zwecke ausserhalb des Unternehmens 7% USt
+8932,Unentgeltliche Erbringung einer sonstigen Leistungen 7% USt 
+8934,Entnahme von sonstige Leistungen 7% USt nach§ 1 Abs.1 Nr.2b UStG (z.B. Kfz und Telefonkosten) bis 31.03.99
+8935,Unentgeltliche Zuwendung von Gegenständen 16 % USt
+8938,Entnahme von sonstige Leistungen 15% USt nach§ 1 Abs.1 Nr.2b UStG (z.B. Kfz und Telefonkosten) bis 31.03.98
+8939,Unentgeltliche Zuwendung von Gegenständen ohne Umsatzsteuer
+8940,Unentgeltliche Zuwendung von Waren 16% USt
+8941,"Eigenverbrauch 7% USt, Aufwendungen i.S.d. § 4 Abs.5 Nr.1 7 EStG, Abs.7 EStG, § 1 Abs.1 Ziff.2c UStG bis 31.03.99"
+8942,"Eigenverbrauch 16% USt, Aufwendungen i.S.d. § 4 Abs.5 Nr.1 7 EStG, Abs.7 EStG, § 1 Abs.1 Ziff.2c UStG bis 31.03.99"
+8943,"Eigenverbrauch 15% USt, Aufwendungen i.S.d. § 4 Abs.5 Nr.1 7 EStG, Abs.7 EStG, § 1 Abs.1 Ziff.2c UStG bis 31.03.98"
+8944,"Eigenverbrauch ohne USt, Aufwendungen i.S.d. § 4 Abs.5 Nr.1 7 EStG, Abs.7 EStG, § 1 Abs.1 Ziff.2c UStG bis 31.03.99"
+8945,Unentgeltliche Zuwendung von Waren 7% USt
+8946,Unentgeltliche Leistungen 7% USt von Gesellschaften an Gesellschafter § 1 Abs.1 Nr.3 UStG bis 31.03.99
+8947,Unentgeltliche Leistungen 16% USt von Gesellschaften an Gesellschafter § 1 Abs.1 Nr.3 UStG bis 31.03.99
+8948,Unentgeltliche Leistungen 15% USt von Gesellschaften an Gesellschafter § 1 Abs.1 Nr.3 UStG bis 31.03.98
+8949,Unentgeltliche Zuwendung von Waren ohne USt 
+8950,Nicht steuerbare Umsätze 
+8955,Umsatzsteuervergütungen 
+8960,Bestandsveränderungen unfertige Erzeugnisse 
+8970,Bestandsveränderungen unfertige Leistungen 
+8975,Bestandsveränderungen in Ausführung befindliche Bauaufträge 
+8977,Bestandsveränderungen in Arbeit befindliche Aufträge 
+8980,Bestandsveränderungen fertige Erzeugnisse 
+8990,Andere aktivierte Eigenleistungen 
+9000,Saldovorträge Sachkonten 
+9008,Saldovorträge Debitoren 
+9009,Saldovorträge Kreditoren 
+9071,Offene Posten aus 2001
+9090,Summenvortragskonto 
+9101,Verkaufstage
+9102,Anzahl der Barkunden
+9103,Beschäftigte Personen
+9104,Unbezahlte Personen
+9105,Verkaufskräfte
+9106,Geschäftsraum m²
+9107,Verkaufsraum m²
+9108,Veränderungsrate positiv
+9109,Veränderungsrate negativ
+9110,Plan WE (in Prozent)
+9120,Erweiterungsinvestitionen
+9135,Auftragseingang im Geschäftsjahr
+9140,Auftragsbestand
+9190,Gegenkonto zu statistische Mengeneinheiten Konten 9101 9107
+9199,"Gegenkonto zu Konten 9120, 9135 9140"
+9200,Beschäftigte Personen
+9209,Gegenkonto zu 9200
+9210,Produktive Löhne
+9219,Gegenkonto zu 9210
+9220,Gezeichnetes Kapital in DM (Art. 42 Abs. 3 s. 1 EGHGB)
+9221,Gezeichnetes Kapital in Euro (Art. 42 Abs. 3 S. 2 EGHGB)
+9229,Gegenkonto zu 9220 9221
+9230,Baukostenzuschüsse
+9232,Investitionszulagen
+9234,Investitionszuschüsse
+9239,Gegenkonto zu Konten 9230 9238
+9240,Investitionsverbindlichkeiten bei den Leistungsverbindlichkeiten
+9241,Investitionsverbindlichkeiten aus Sachanlagenverkäufen bei Leistungsverbindlichkeiten
+9242,Investitionsverbindlichkeiten aus Käufen von immateriellen Vermögensgegenständen bei Leistungsverbindlichkeiten
+9243,Investitionsverbindlichkeiten aus Käufen von Finanzanlagen bei Leistungsverbindlichkeiten
+9244,Gegenkonto zu Konten 9240 43
+9245,Forderungen aus Sachanlagenverkäufen bei sonstigen Vermögensgegenständen
+9246,Forderungen aus Verkäufen von immateriellen Vermögensgegenständen bei sonstigen Vermögensgegenständen
+9247,Forderungen aus Verkäufen von Finanzanlagen bei sonstigen Vermögensgegenständen
+9249,Gegenkonto zu Konten 9245 47
+9250,Eigenkapitalersetzende Gesellschafterdarlehen
+9255,Ungesicherte Gesellschafterdarlehen mit Restlaufzeit größer 5 Jahre
+9259,Gegenkonto zu Konten 9250 und 9255
+9260,Kurzfristige Rückstellungen
+9262,Mittelfristige Rückstellungen
+9264,"Langfristige Rückstellungen, außer Pensionen"
+9269,Gegenkonto zu Konten 9260 9268
+9270,Gegenkonto zu 9271 9278 (Sollbuchung)
+9271,Verbindlichkeiten aus der Begebung und Übertragung von Wechseln
+9272,Verbindlichkeiten aus der Begebung und Übertragung von Wechseln gegenüber verbundenen Unternehmen
+9273,"Verbindlichkeiten aus Bürgschaften, Wechsel und Scheckbürgschaften"
+9274,"Verbindlichkeiten aus Bürgschaften, Wechsel und Scheckbürgschaften gegenüber verbundenen Unternehmen"
+9275,Verbindlichkeiten aus Gewährleistungsverträgen
+9276,Verbindlichkeiten aus Gewährleistungsverträgen gegenüber verbundenen Unternehmen
+9277,Haftung aus der Bestellung von Sicherheiten für fremde Verbindlichkeiten
+9278,Haftung aus der Bestellung von Sicherheiten für fremde Verbindlichkeiten gegenüber verbundenen Unternehmen
+9280,Gegenkonto zu Konten 9281 9284
+9281,Verpflichtungen aus Miet und Leasingverträgen
+9282,Verpflichtungen aus Miet und Leasingverträgen gegenüber verbundenen Unternehmen
+9283,Andere Verpflichtungen gem. § 285 Nr. 3 HGB
+9284,Andere Verpflichtungen gem. § 285 Nr. 3 HGB gegenüber verbundenen Unternehmen
+9290,Statitisches Konto steuerfreie Auslagen
+9291,Gegenkonto zu 9290 
+9292,Statitisches Konto Fremdgeld
+9293,Gegenkonto zu 9292
+9410,Ausstehende Einlagen gem. § 26 Abs. 3 DMBilG nicht eingefordert (Aktivausweis) 
+9411,Ausstehende Einlagen gem. § 26 Abs. 3 DMBilG eingefordert (Aktivausweis) 
+9413,Aufwendungen für die Ingangsetzung und Erweiterung des Geschäftsbetriebs gem. § 31 Abs.1 Nr. 2 DMBilG
+9415,Nichtentgeltlich erworbene immaterielle Vermögensgegenstände gem. § 31 Abs. 1 Nr. 2 DMBilG
+9416,Nutzungsrechte gem. § 9 Abs. 3 Satz 2 DMBilG 
+9420,Forderungen gegen verbundene Unternehmen aus Ausgleichsverbindlichkeiten gem.§ 25 DMBilG 
+9421,Forderungen gegen verbundene Unternehmen aus Ausgleichsverbindlichkeiten gem.§ 25 DMBilG mit einer Restlaufzeit bis zu 1 Jahr
+9422,Forderungen gegen verbundene Unternehmen aus Ausgleichsverbindlichkeiten gem.§ 25 DMBilG mit einer Restlaufzeit von mehr als 1 Jahr
+9426,Eingeforderte Einlagen gem. § 26 Abs. 3 DMBilG 
+9427,Ausgleichsforderungen gem. § 24 DMBilG 
+9428,Ausgleichsforderungen gem. § 24 DMBilG mit einer Restlaufzeit bis zu 1 Jahr
+9429,Ausgleichsforderungen gem. § 24 DMBilG mit einer Restlaufzeit von mehr als 1 Jahr
+9430,Forderungen nach dem VermG gem.§ 7 Abs.6 DMBilG
+9431,Forderungen nach dem VermG gem.§ 7 Abs.6 DMBilG mit einer Restlaufzeit bis zu 1 Jahr
+9432,Forderungen nach dem VermG gem.§ 7 Abs.6 DMBilG mit einer Restlaufzeit von mehr als 1 Jahr
+9433,Vermögensvorteile gem. § 31 Abs. 1 Nr. 3 DMBilG
+9434,Kapitalentwertungskonto 
+9435,Kapitalentwertungskonto gem. § 28 Abs. 1 DMBilG 
+9436,Kapitalentwertungskonto gem. § 26 Abs. 3 DMBilG 
+9438,Sonderverlustkonto aus Rückstellungsbildung gem. § 17 Abs. 4 DMBilG 
+9440,Beteiligungsentwertungskonto gem. § 24 Abs.5 DMBilG 
+9445,Vorläufige Gewinnrücklage gem. § 31 Abs.1 DMBilG 
+9446,Sonderrücklage gem. § 7 Abs. 6 Satz 2 DMBilG 
+9447,Sonderrücklage gem. § 17 Abs. 4 Satz 3 DMBilG 
+9448,Sonderrücklage gem. § 24 Abs. 5 Satz 3 DMBilG 
+9449,Sonderrücklage gem. § 27 Abs. 2 Satz 3 DMBilG 
+9450,Rückstellungen für Umweltbeeinträchtigungen gem. § 17 Abs. 2a DMBilG
+9451,Nachrangiges Kapital gem. § 16 Abs.3 Satz 2 DMBilG 
+9453,Berichtigung von Wertansätzen gem. § 36 DMBilG Erhöhung der Aktivposten 
+9454,Berichtigung von Wertansätzen gem. § 36 DMBilG Verminderung der Aktivposten 
+9455,Berichtigung von Wertansätzen gem. § 36 DMBilG Erhöhung der Passivposten 
+9456,Berichtigung von Wertansätzen gem. § 36 DMBilG Verminderung der Passivposten 
+9457,Verbindlichkeiten gegenüber verbundenen Unternehmen aus Ausgleichsforderungen gem. § 24 DMBilG 
+9458,Verbindlichkeiten gegenüber verbundenen Unternehmen aus Ausgleichsforderungen gem. § 24 DMBilG mit einer Restlaufzeit bis zu 1 Jahr
+9459,Verbindlichkeiten gegenüber verbundenen Unternehmen aus Ausgleichsforderungen gem. § 24 DMBilG mit einer Restlaufzeit von 1 bis 5 Jahren
+9460,Verbindlichkeiten gegenüber verbundenen Unternehmen aus Ausgleichsforderungen gem. § 24 DMBilG mit einer Restlaufzeit von mehr als 5 Jahren
+9462,Verbindlichkeiten gegenüber verbundenen Unternehmen gem. § 26 DMBilG 
+9463,Verbindlichkeiten gegenüber verbundenen Unternehmen gem. § 26 DMBilG mit einer Restlaufzeit bis zu 1 Jahr
+9464,Verbindlichkeiten gegenüber verbundenen Unternehmen gem. § 26 DMBilG mit einer Restlaufzeit von 1 bis 5 Jahren
+9465,Verbindlichkeiten gegenüber verbundenen Unternehmen gem. § 26 DMBilG mit einer Restlaufzeit von mehr als 5 Jahren
+9467,Ausgleichsverbindlichkeiten gem. § 25 Abs. 1 DMBilG 
+9468,Ausgleichsverbindlichkeiten gem. § 25 Abs. 1 DMBilG mit einer Restlaufzeit bis zu 1 Jahr
+9469,Ausgleichsverbindlichkeiten gem. § 25 Abs. 1 DMBilG mit einer Restlaufzeit von 1 bis 5 Jahren
+9470,Ausgleichsverbindlichkeiten gem. § 25 Abs. 1 DMBilG mit einer Restlaufzeit von mehr als 5 Jahren
+9472,Verbindlichkeiten nach dem VermG gem. § 7 Abs. 6 DMBilG
+9473,Verbindlichkeiten nach dem VermG gem. § 7 Abs. 6 DMBilG mit einer Restlaufzeit bis zu 1 Jahr
+9474,Verbindlichkeiten nach dem VermG gem. § 7 Abs. 6 DMBilG mit einer Restlaufzeit von 1 bis 5 Jahren
+9475,Verbindlichkeiten nach dem VermG gem. § 7 Abs. 6 DMBilG mit einer Restlaufzeit von mehr als 5 Jahren
+9476,Verbindlichkeiten aus Rückzahlungsverpflichtungen gem § 17 Abs. 4a DMBilG
+9477,Verbindlichkeiten aus Rückzahlungsverpflichtungen gem § 17 Abs. 4a DMBilG mit einer Restlaufzeit bis zu 1 Jahr
+9478,Verbindlichkeiten aus Rückzahlungsverpflichtungen gem § 17 Abs. 4a DMBilG mit einer Restlaufzeit von 1 bis 5 Jahren
+9479,Verbindlichkeiten aus Rückzahlungsverpflichtungen gem § 17 Abs. 4a DMBilG mit einer Restlaufzeit von mehr als 5 Jahren
+9480,Auflösung Kapitalentwertungskonto gem § 28 Abs. 2 Satz 4 DMBilG
+9481,Entnahmen aus vorläufigen Gewinnrücklagen gem. § 31 Abs. 6 DMBilG
+9482,Entnahmen aus Sonderrücklagen
+9486,Abschreibungen auf Ausgleichsforderungen gem. DMBilG
+9487,Erträge aus der Auflösung von Rückstellungen gem. DMBilG
+9500,Anteil für Konto 0900 09 Teilhafter
+9510,Anteil für Konto 0910 19 Teilhafter
+9520,Anteil für Konto 0920 29 Teilhafter
+9530,Anteil für Konto 0830 39 Teilhafter
+9540,Anteil für Konto 0810 19 Vollhafter
+9550,Anteil für Konto 9810 9819
+9560,Anteil für Konto 9820 9829
+9570,Anteil für Konto 0870 79 Vollhafter
+9580,Anteil für Konto 0880 89 Vollhafter
+9590,Anteil für Konto 0890 99 Vollhafter
+9600,Name des Gesellschafters Vollhafter
+9610,Tätigkeitsvergütung Vollhafter
+9620,Tantieme Vollhafter
+9630,Darlehensverzinsung Vollhafter
+9640,Gebrauchsüberlassung Vollhafter
+9650,Sonstige Vergütungen Vollhafter
+9690,Restanteil Vollhafter
+9700,Name des Gesellschafters Teilhafter
+9710,Tätigkeitsvergütung Teilhafter
+9720,Tantieme Teilhafter
+9730,Darlehensverzinsung Teilhafter
+9740,Gebrauchsüberlassung Teilhafter
+9750,Sonstige Vergütungen Teilhafter
+9780,Anteil für Konto 9840 9849
+9790,Restanteil Teilhafter
+9810,Gesellschafter Darlehen
+9820,Verlust /Vortragskonto
+9830,Verrechnungskonto für Einzahlungsverpflichtungen
+9840,Gesellschafter Darlehen
+9850,Verrechnungskonto für Einzahlungsverpflichtungen
+9860,Einzahlungsverpflichtungen persönlich haftender Gesellschafter
+9870,Einzahlungsverpflichtungen Kommanditisten
+9880,Ausgleichsposten für aktivierte eigene Anteile
+9882,Ausgleichsposten für aktivierte Bilanzierungshilfen
+9887,Steueraufwand der Gesellschafter
+9889,Gegenkonto zu 9887
+9890,Statistisches Konto passive Lohnveredelung 
+9899,Gegenkonto zu 9890 
+10000,Kunde
+70000,Lieferant
+80000,Lieferanten Sicherheitseinbehalte

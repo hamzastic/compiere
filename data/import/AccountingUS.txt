@@ -1,0 +1,4 @@
+AccountingUS.txt
+----------------
+For explanation, use and updates please check
+http://www.compiere.org/support/implement/chartOfAccounts.html

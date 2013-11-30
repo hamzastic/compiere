@@ -1,0 +1,8 @@
+myDevEnv.bat
+myDevEnv.properties
+*.project
+XX*
+Daily*
+RUN_buildTransfer*
+copy*
+*.ois

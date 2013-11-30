@@ -1,0 +1,273 @@
+<?xml version="1.0"?>
+<!-- ============================================= -->
+<!-- Compiere Server Root                          -->
+<!-- ============================================= -->
+<!-- $Header: /opt/mercurial/repository/CVSRepo/compiere/compiere-all/serverRoot/build.xml,v 1.2 2007/09/06 15:51:29 marco Exp $-->
+
+<project name="compiereRoot" default="main" basedir=".">
+
+  <property environment="env"/>
+  <property name="jboss.home" value="../jboss" />
+  <property name="jboss.configuration" value="compiere" />
+
+  <property name="jboss.lib" value="${jboss.home}/lib" />
+  <property name="jboss.client" value="${jboss.home}/client" />
+  <property name="servlet-lib.path" value="../tools/lib/servlet.jar" />
+
+  <property name="xdoclet.home" value="${env.XDOCLET_HOME}" />
+  <property name="xdoclet.force" value="false" />
+  <property name="ejb.version" value="2.0" />
+  <property name="jboss.version" value="3.0" />
+  <property name="type.mapping" value="Oracle9" />
+  <property name="datasource.name" value="java:/OracleDS" />
+
+  <property name="src.dir" value="${basedir}/src"/>
+  <property name="src.main.dir" value="${src.dir}/main"/>
+  <property name="src.ear.dir" value="${src.dir}/ear"/>
+  <property name="src.ejb.dir" value="${src.main.dir}/ejb"/>
+  <property name="src.servlet.dir" value="${src.main.dir}/servlet"/>
+  <property name="src.server.dir" value="${src.main.dir}/server"/>
+  <property name="src.resources.dir" value="${src.dir}/resources"/>
+  <property name="src.web.dir" value="${src.dir}/web"/>
+
+  <property name="build.dir" value="${basedir}/build"/>
+  <property name="build.tmp.dir" value="${build.dir}/tmp"/>
+  <property name="build.deploy.dir" value="${build.dir}/deploy"/>
+  <property name="build.classes.dir" value="${build.dir}/classes"/>
+  <property name="build.war.dir" value="${build.dir}/war"/>
+
+  <property name="interfaces.dir" value="../interfaces"/>
+  <property name="src.interfaces.dir" value="../interfaces/src"/>
+  <property name="build.interfaces.dir" value="../interfaces/classes"/>
+<!-- ML, Mayking: compatibility with Java 5.   -->
+    <condition property="java5" >
+      <equals arg1="${ant.java.version}" arg2="1.5" />
+    </condition>
+<!-- End ML, Mayking.   -->
+
+
+  <target name="init">
+    <echo message="=========== Build Server Root"/>
+    <echo message="            (${xdoclet.home}"/>
+
+    <uptodate property="interfaces.uptodate"
+		targetfile="${interfaces.dir}/Interfaces.jar">
+      <srcfiles dir="${src.ejb.dir}" includes="**/*.java"/>
+      <srcfiles dir="${src.interfaces.dir}" includes="**/*.java"/>
+    </uptodate>
+  	
+<!-- ML, Mayking: compatibility with Java 5.   -->
+    <antcall target="jnlp-1.4" />
+    <antcall target="jnlp-1.5" />
+<!-- End ML, Mayking.   -->
+  </target>
+
+<!-- ML, Mayking: compatibility with Java 5.   -->
+  <target name="jnlp-1.4" unless="java5">
+    <echo message="Setup JNLP for Java 2." />
+    <copy file="${src.web.dir}/compiere-1.4.jnlp"
+          tofile="${src.web.dir}/compiere.jnlp" overwrite="true"/>
+  </target>
+  <target name="jnlp-1.5" if="java5">
+    <echo message="Setup JNLP for Java 5." />
+    <copy file="${src.web.dir}/compiere-1.5.jnlp"
+          tofile="${src.web.dir}/compiere.jnlp" overwrite="true"/>
+  </target>
+<!-- End ML, Mayking.   -->
+
+  <path id="xdoclet.path">
+    <pathelement location="${xdoclet.home}/lib/ant.jar" />
+    <pathelement location="${xdoclet.home}/lib/xdoclet.jar" />
+    <pathelement location="${xdoclet.home}/lib/log4j.jar" />
+  </path>
+
+  <path id="base.path">
+    <path refid="xdoclet.path"/>
+    <pathelement location="../lib/Compiere.jar" />
+    <pathelement location="../lib/CSTools.jar" />
+    <pathelement location="../tools/lib/j2ee.jar" />
+
+
+    <pathelement location="${build.classes.dir}" />
+  </path>
+
+
+  <!-- =================================================================== -->
+  <!-- Generates the necessary EJB classes and deployment descriptors      -->
+  <!-- =================================================================== -->
+  <target name="xdoclet-generate" depends="init">
+    <echo message="XDoclet=${xdoclet.home}"/>
+    <echo message="UpToDate=${interfaces.uptodate}"/>
+    
+    <taskdef
+	  name="ejbdoclet"
+	  classname="xdoclet.ejb.EjbDocletTask">
+      <classpath refid="xdoclet.path"/>
+    </taskdef>
+
+    <ejbdoclet
+	  sourcepath="${src.ejb.dir}"
+	  destdir="${src.interfaces.dir}"
+	  classpathref="base.path"
+	  excludedtags="@version,@author"
+	  ejbspec="${ejb.version}"
+	  mergedir="${src.resources.dir}/xdoclet"
+	  force="${xdoclet.force}">
+      <fileset dir="${src.ejb.dir}">
+        <include name="**/*Bean.java"/>
+      </fileset>
+      <packageSubstitution packages="session,entity" substituteWith="interfaces"/>
+      <dataobject/>
+      <remoteinterface/>
+      <homeinterface/>
+      <entitypk/>
+      <entitybmp/>
+      <entitycmp/>
+      <deploymentdescriptor destdir="${build.dir}/META-INF"/>
+      <!-- AS 4/29/02 Do not validate XML files because JBoss 3.0 message driven will
+      	report an wrong error because it uses the wrong jboss.dtd -->
+      <jboss version="${jboss.version}"
+	    xmlencoding="UTF-8"
+	    typemapping="${type.mapping}"
+	    datasource="${datasource.name}"
+	    destdir="${build.dir}/META-INF"
+	    validateXml="false"/>
+    </ejbdoclet>
+  </target>
+
+
+  <!-- =========================================== -->
+  <!-- Compiles the source code                    -->
+  <!-- =========================================== -->
+  <target name="compile" depends="xdoclet-generate">
+    <mkdir dir="${build.classes.dir}"/>
+
+    <!--	Compile all -->
+    <javac
+	  destdir="${build.classes.dir}"
+	  debug="on"
+	  deprecation="off"
+	  optimize="on"
+	  classpathref="base.path">
+      <src path="${src.ejb.dir}"/>
+      <src path="${src.interfaces.dir}"/>
+      <src path="${src.servlet.dir}"/>
+      <src path="${src.server.dir}"/>
+    </javac>
+
+  </target>
+
+
+  <!-- =========================================== -->
+  <!-- Creates the jar archives                    -->
+  <!-- =========================================== -->
+  <target name="jar" depends="compile">
+    <mkdir dir="${build.deploy.dir}"/>
+
+    <!--	Jar -->
+    <jar
+	  jarfile="${build.deploy.dir}/compiereRoot.jar">
+      <fileset
+	    dir="${build.classes.dir}">
+      </fileset>
+      <fileset
+	    dir="${build.dir}"
+	    includes="META-INF/**">
+      </fileset>
+      <manifest>
+		<attribute name="Specification-Title" value="CompiereRoot"/>
+		<attribute name="Specification-Version" value="${env.COMPIERE_VERSION}"/>
+		<attribute name="Specification-Vendor" value="(C) 2005 ComPiere, Inc."/>
+		<attribute name="Implementation-Title" value="CompiereRoot ${env.COMPIERE_VERSION}"/>
+		<attribute name="Implementation-Version" value="${env.COMPIERE_VERSION}  ${DSTAMP}-${TSTAMP}"/>
+		<attribute name="Implementation-Vendor" value="${env.COMPIERE_VENDOR}"/>
+		<attribute name="Implementation-URL" value="http://www.compiere.com"/>
+		<attribute name="Class-Path" value="Compiere.jar CompiereSLib.jar"/>
+      </manifest>
+    </jar>
+
+  </target>
+
+  <!-- =========================================== -->
+  <!-- Creates the war archives                    -->
+  <!-- =========================================== -->
+  <target name="war" depends="jar">
+    <war
+	  warfile="${build.deploy.dir}/compiereRootBase.war"
+	  webxml="${src.web.dir}/WEB-INF/web.xml">
+	  <!-- copy from web		-->
+      <fileset dir="${src.web.dir}" excludes="**/web.xml,**/lib/**,**/classes/**"/>
+      <!-- WEB-INF/lib			-->
+      <lib dir="${src.web.dir}/WEB-INF/lib"/>
+      <lib dir="${build.deploy.dir}" includes="compiereRoot.jar"/>
+      <manifest>
+		<attribute name="Specification-Title" value="CompiereRootWar"/>
+		<attribute name="Specification-Version" value="${env.COMPIERE_VERSION}"/>
+		<attribute name="Specification-Vendor" value="(C) 2005 ComPiere, Inc."/>
+		<attribute name="Implementation-Title" value="CompiereRootWar ${env.COMPIERE_VERSION}"/>
+		<attribute name="Implementation-Version" value="${env.COMPIERE_VERSION}  ${DSTAMP}-${TSTAMP}"/>
+		<attribute name="Implementation-Vendor" value="${env.COMPIERE_VENDOR}"/>
+		<attribute name="Implementation-URL" value="http://www.compiere.com"/>
+		<attribute name="Class-Path" value="Compiere.jar CompiereSLib.jar"/>
+      </manifest>
+    </war>
+  </target>
+
+
+  <!-- =========================================== -->
+  <!-- Creates the interface archive               -->
+  <!-- =========================================== -->
+  <target name="interfaces" depends="compile">
+
+    <!-- Copy MBeans to interfaces		-->
+    <copy todir="${src.interfaces.dir}">
+      <fileset dir="${src.server.dir}" includes="**/*MBean.java"/>
+    </copy>
+
+    <!-- Compile interfaces			-->
+    <mkdir dir="${build.interfaces.dir}"/>
+    <javac
+	  srcdir="${src.interfaces.dir}"
+	  destdir="${build.interfaces.dir}"
+	  debug="off"
+	  deprecation="on"
+	  optimize="on"
+	  classpathref="base.path">
+    </javac>
+    <!-- Jar Interfaces				-->
+    <jar
+	  destfile="${interfaces.dir}/Interfaces.jar"
+	  basedir="${build.interfaces.dir}" />
+  </target>
+
+
+  <!-- =========================================== -->
+  <!-- Deploy Server Files		                   -->
+  <!-- =========================================== -->
+  <target name="deploy-server" depends="jar,war,interfaces">
+	<copy todir="../lib">
+		<fileset dir="${build.deploy.dir}"/>
+	</copy>
+	<copy file="${src.ear.dir}/application.xml" 
+		tofile="../lib/compiereRoot.xml"/>
+  </target>
+
+
+  <!-- =========================================== -->
+  <!-- Creates the binary structure                -->
+  <!-- =========================================== -->
+  <target name="main" depends="deploy-server">
+  </target>
+
+
+  <!-- =========================================== -->
+  <!-- Cleans up the current build                 -->
+  <!-- =========================================== -->
+  <target name="clean">
+    <delete dir="${build.dir}" failonerror="false"/>
+    <delete>
+      <fileset dir="${src.interfaces.dir}" includes="**/*.java"/>
+    </delete>
+  </target>
+
+</project>

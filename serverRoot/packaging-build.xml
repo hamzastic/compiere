@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="_packaging_generation_" name="Packaging Generator">
+<target name="_packaging_generation_" depends="N10004,N10015"/>
+<target name="N10004" description="Stand.jar">
+<jar destfile="Stand.jar">
+<zipfileset dir="lib" includes="**/*.class"/>
+</jar>
+</target>
+<target name="N10015" description="Stand.war">
+<jar destfile="Stand.war">
+<zipfileset dir="src/web/WEB-INF" prefix="WEB-INF">
+<include name="web.xml"/>
+</zipfileset>
+<zipfileset dir="src/web" prefix="WEB-INF/classes" includes="**/*.class"/>
+</jar>
+</target>
+</project>

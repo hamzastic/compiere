@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/generateModel/com/mayking/compiere/genModel/GenerateModel.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<booleanAttribute key="org.eclipse.debug.core.appendEnvironmentVariables" value="true"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.mayking.compiere.genModel.GenerateModel"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="${env_var:HOME}/tmp/ org.compiere.model &quot;'C','D','A','U','CUST'&quot; postgresql localhost 5432 opensuitelab opensuite opensuite"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="generateModel"/>
+</launchConfiguration>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="_packaging_generation_" name="Packaging Generator">
+<target name="_packaging_generation_" depends="N10004,N10015,N10036"/>
+<target name="N10004" description="compiereApps.jar">
+<mkdir dir="build/jar"/>
+<jar destfile="build/jar/compiereApps.jar">
+<zipfileset dir="lib" excludes="**/CVS/**"/>
+</jar>
+</target>
+<target name="N10015" description="compiereApps.war">
+<mkdir dir="build/deploy"/>
+<jar destfile="build/deploy/compiereApps.war">
+<zipfileset dir="build/jar" prefix="WEB-INF/lib">
+<include name="compiereApps.jar"/>
+</zipfileset>
+<zipfileset dir="src/web/WEB-INF" prefix="WEB-INF">
+<include name="web.xml"/>
+</zipfileset>
+<zipfileset dir="src/web" excludes="**/web.xml,**/lib/**,**/classes/**"/>
+</jar>
+</target>
+<target name="N10036" description="compiereApps.ear">
+<mkdir dir="build/deploy"/>
+<jar destfile="build/deploy/compiereApps.ear">
+<zipfileset dir="build/deploy">
+<include name="compiereApps.war"/>
+</zipfileset>
+<zipfileset dir="/opt/compiere/compieredev/compiere/Compiere2/lib">
+<include name="Compiere.jar"/>
+</zipfileset>
+<zipfileset dir="/opt/compiere/compieredev/compiere/Compiere2/lib">
+<include name="CompiereSLib.jar"/>
+</zipfileset>
+<zipfileset dir="src/ear" prefix="META-INF">
+<include name="application.xml"/>
+</zipfileset>
+</jar>
+</target>
+</project>

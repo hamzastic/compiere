@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="_packaging_generation_" name="Packaging Generator">
+<target name="_packaging_generation_" depends="N10004,N10015,N10030,N1004B"/>
+<target name="N10004" description="Compiere.jar">
+<mkdir dir="build/deploy"/>
+<jar destfile="build/deploy/Compiere.jar">
+<zipfileset dir="../client/lib"/>
+</jar>
+</target>
+<target name="N10015" description="CompiereSLib.jar">
+<mkdir dir="build/deploy"/>
+<jar destfile="build/deploy/CompiereSLib.jar">
+<zipfileset dir="../tools/lib/local"/>
+</jar>
+</target>
+<target name="N10030" description="compiereWebStore.war">
+<mkdir dir="build/deploy"/>
+<jar destfile="build/deploy/compiereWebStore.war">
+<zipfileset dir="src/web" excludes="**/lib/**,**/classes/**"/>
+<zipfileset dir="../serverApps/lib"/>
+</jar>
+</target>
+<target name="N1004B" description="compiereWebStore.ear">
+<mkdir dir="build/deploy"/>
+<jar destfile="build/deploy/compiereWebStore.ear">
+<zipfileset dir="build/deploy">
+<include name="compiereWebStore.war"/>
+</zipfileset>
+<zipfileset dir="src/ear" prefix="META-INF">
+<include name="application.xml"/>
+</zipfileset>
+<zipfileset dir="build/deploy">
+<include name="Compiere.jar"/>
+</zipfileset>
+<zipfileset dir="build/deploy">
+<include name="CompiereSLib.jar"/>
+</zipfileset>
+</jar>
+</target>
+</project>

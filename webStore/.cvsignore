@@ -1,0 +1,7 @@
+*.library
+*~
+*.war
+*.jpx
+*.local
+
+build

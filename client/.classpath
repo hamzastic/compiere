@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="Src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="/base"/>
+	<classpathentry kind="src" path="/dbPort"/>
+	<classpathentry kind="src" path="/print"/>
+	<classpathentry kind="src" path="/tools"/>
+	<classpathentry kind="src" path="/looks"/>
+	<classpathentry kind="src" path="/extend"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/reportServer"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/serverRoot"/>
+	<classpathentry kind="lib" path="/jboss/lib/xercesImpl.jar"/>
+	<classpathentry kind="lib" path="/interfaces/Interfaces.jar"/>
+	<classpathentry kind="output" path="build"/>
+</classpath>

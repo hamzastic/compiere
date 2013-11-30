@@ -1,0 +1,9 @@
+*.library
+*~
+*.jpx
+*.local
+build
+lib
+lib/
+*/lib/*
+doc

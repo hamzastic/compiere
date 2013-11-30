@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="/tools"/>
+	<classpathentry kind="var" path="JUNIT_HOME/junit.jar"/>
+	<classpathentry kind="src" path="/looks"/>
+	<classpathentry kind="src" path="/jboss"/>
+	<classpathentry kind="lib" path="/tools/lib/jconn3.jar"/>
+	<classpathentry kind="lib" path="/tools/lib/ocrs12.jar"/>
+	<classpathentry kind="lib" path="/tools/lib/ojdbc14.jar"/>
+	<classpathentry kind="lib" path="/tools/lib/rowset.jar"/>
+	<classpathentry kind="lib" path="/tools/lib/postgresql.jar"/>
+	<classpathentry kind="lib" path="/interfaces/Interfaces.jar"/>
+	<classpathentry kind="output" path="build"/>
+</classpath>

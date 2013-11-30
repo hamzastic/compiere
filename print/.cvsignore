@@ -1,0 +1,7 @@
+*.jar
+*.*~
+*.jpx
+*.local
+
+build
+lib

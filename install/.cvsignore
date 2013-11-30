@@ -1,0 +1,11 @@
+*.*~
+*.jar
+*.library
+*.jpx
+*.local
+
+release
+build
+doc
+lib
+bak
